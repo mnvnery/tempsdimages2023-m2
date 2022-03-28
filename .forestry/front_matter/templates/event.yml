@@ -1,4 +1,29 @@
 ---
 label: Event
 hide_body: true
-fields: []
+fields:
+- name: imagem
+  type: file
+  config:
+    maxSize: 64
+  label: Imagem
+- name: show
+  type: text
+  config:
+    required: false
+  label: Nome do Espétaculo
+- name: Artist
+  type: text
+  config:
+    required: false
+  label: Nome Artista
+- name: dates
+  type: text
+  config:
+    required: false
+  label: Data(s)
+- name: venue
+  type: text
+  config:
+    required: false
+  label: Local
