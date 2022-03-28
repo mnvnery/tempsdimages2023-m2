@@ -1,0 +1,10 @@
+---
+label: Home
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: momento1
+  label: momento1
