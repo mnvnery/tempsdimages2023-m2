@@ -58,7 +58,7 @@ fields:
     schema:
       format: html-blocks
   label: Ficha Técnica
-- name: biografias
+- name: bios
   type: field_group_list
   fields:
   - name: artist_bio
@@ -66,7 +66,7 @@ fields:
     config:
       required: false
     label: Nome Artista
-  - name: biografia
+  - name: bio
     type: textarea
     default: ''
     config:
