@@ -18,6 +18,12 @@ fields:
   config:
     required: false
   label: Nome Artista
+- name: dias
+  type: tag_list
+  default: []
+  description: 'Adicionar os números dos dias em que o evento ocorre. Apenas os números,
+    cada um como um elemento diferente. ex: 12, 13, 14'
+  label: Dias
 - name: dates
   type: text
   config:
@@ -42,11 +48,5 @@ fields:
     schema:
       format: html-blocks
   label: Sinopse
-- name: dias
-  type: tag_list
-  default: []
-  description: 'Adicionar os números dos dias em que o evento ocorre. Apenas os números,
-    cada um como um elemento diferente. ex: 12, 13, 14'
-  label: Dias
 pages:
 - _events/Ghost.html
