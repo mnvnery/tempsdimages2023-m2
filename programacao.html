@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class='d-flex momento-1-header p-3 justify-content-between border-pink pink mx-3'>
+<div class='d-flex momento-1-header p-3 justify-content-between border border-pink pink mx-3'>
     <div class="font-attila">Momento I</div>
     <div>
         <svg width="238" height="24" viewBox="0 0 238 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,4 +22,19 @@ layout: default
     <div>21</div>
     <div>22</div>
 </div>
-<div
+<div class="all-events">
+{% for event in site.events %}
+    <div class="event-container d-flex mx-3 px-2 border-start border-end border-pink">
+        <img src="{{site.baseurl}}/{{event.imagem}}" alt="Event Image" class="pink-shadow w-50 mx-4 event-img">
+        <div class="event-details">
+            <h6>{{ event.title }}</h6>
+            <h6>{{ event.artist }}</h6>
+            <br>
+            <p>{{ event.dates }}</p>
+            <p>{{ event.venue }}</p>
+            <p>{{ event.times }}</p>
+        </div>
+    </div>
+    <div class="border-top border-pink w-100 mx-3"></div>
+{% endfor %}    
+</div>

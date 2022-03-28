@@ -18,15 +18,21 @@ a:hover { opacity: 0.7; color: #E64DDC; }
 
 .pink-shadow { box-shadow: -9px -8px 12px -4px #E64DDC; }
 
-.border-pink { border: 1px solid #E64DDC; }
+.border-pink { border-color: #E64DDC !important; }
 
-.border-red { border: 1px solid #FF3844; }
+.border-red { border-color: #FF3844 !important; }
 
 .pink { color: #E64DDC; }
 
 .red { color: #FF3844; }
 
 .hero-section { min-width: 0; width: 100vw; }
+
+.event-img { margin-top: -10px; margin-bottom: 2em; }
+
+.event-container:nth-child(even) { flex-direction: row-reverse; }
+
+.event-container:nth-child(odd) { flex-direction: row; }
 
 .hero-img { height: 77vh; width: 100%; object-fit: cover; object-position: 5% 60%; filter: saturate(0); }
 
