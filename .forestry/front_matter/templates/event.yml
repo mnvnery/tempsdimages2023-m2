@@ -1,6 +1,7 @@
 ---
 label: Event
 hide_body: true
+display_field: show
 fields:
 - name: show
   type: text
@@ -43,7 +44,7 @@ fields:
   label: Sinopse
 - name: dias
   type: select
-  default: []
+  default: ''
   config:
     required: false
     options:
