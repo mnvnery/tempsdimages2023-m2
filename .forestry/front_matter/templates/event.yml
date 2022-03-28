@@ -65,3 +65,5 @@ fields:
       path: 
   label: Dias
   description: Selecionar todos os dias em que acontece o evento
+pages:
+- _events/Ghost.html
