@@ -29,6 +29,7 @@ fields:
   config:
     required: false
   label: Data(s)
+  description: 'Exemplo formato: 14-16 maio 2022'
 - name: venue
   type: text
   config:
