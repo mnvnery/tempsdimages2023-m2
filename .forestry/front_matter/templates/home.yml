@@ -9,3 +9,5 @@ fields:
 - type: file
   name: momento1
   label: Imagem Momento I
+pages:
+- index.html
