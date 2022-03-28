@@ -12,7 +12,7 @@ sections:
   label: Events
   create: documents
   match: "**/*"
-  new_doc_ext: hmtl
+  new_doc_ext: html
   templates:
   - event
 upload_dir: assets/img
