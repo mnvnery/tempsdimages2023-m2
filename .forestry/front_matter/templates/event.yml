@@ -75,4 +75,5 @@ fields:
     labelField: 
   label: Biografias
 pages:
+- _events/AmorPolitica.html
 - _events/Ghost.html
