@@ -48,5 +48,14 @@ fields:
     schema:
       format: html-blocks
   label: Sinopse
+- name: tech
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Ficha Técnica
 pages:
 - _events/Ghost.html
