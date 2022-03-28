@@ -41,3 +41,27 @@ fields:
     schema:
       format: html-blocks
   label: Sinopse
+- name: dias
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - '12'
+    - '13'
+    - '14'
+    - '15'
+    - '16'
+    - '17'
+    - '18'
+    - '19'
+    - '20'
+    - '21'
+    - '22'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Dias
+  description: Selecionar todos os dias em que acontece o evento
