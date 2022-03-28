@@ -27,3 +27,8 @@ fields:
   config:
     required: false
   label: Local
+- name: times
+  type: text
+  config:
+    required: false
+  label: Horário
