@@ -60,6 +60,11 @@ fields:
 - name: biografias
   type: field_group_list
   fields:
+  - name: artist_bio
+    type: text
+    config:
+      required: false
+    label: Nome Artista
   - name: biografia
     type: textarea
     default: ''
