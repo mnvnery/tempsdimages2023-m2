@@ -1,0 +1,7 @@
+---
+label: Sobre
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
