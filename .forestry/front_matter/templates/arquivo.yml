@@ -1,0 +1,8 @@
+---
+label: Arquivo
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true

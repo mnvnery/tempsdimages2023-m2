@@ -7,7 +7,6 @@ sections:
 - type: document
   path: arquivo.html
   label: Arquivo
-  match: "**/*"
 - type: document
   path: index.html
   label: Home
