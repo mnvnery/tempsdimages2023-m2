@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+<div class="mx-3">
+    <div class="d-flex border border-bottom-0 border-pink col-scroll">
+        <div class="text-center border-end border-pink p-5 overflow-scroll">
+        {{page.festival}}
+        <div class="small-text">{{page.tech}}</div>
+        </div>
+        <div class="p-5 overflow-scroll">
+        <h6 class="text-center"><b>{{page.momento_1.title}}</b></h6>
+        <p class="text-center">{{page.momento_1.datas}}</p>
+        {{page.momento_1.info}}
+        </div>
+    </div>
+    {% include momento1.html%}
+</div>
