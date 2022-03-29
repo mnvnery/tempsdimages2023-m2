@@ -5,3 +5,13 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+- name: festival
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: O Festival
