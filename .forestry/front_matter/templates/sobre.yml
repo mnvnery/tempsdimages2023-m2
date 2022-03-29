@@ -20,9 +20,9 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Ficha Técnica
 - name: momento_1
   type: field_group
