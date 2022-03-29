@@ -36,11 +36,12 @@ fields:
     labelField: 
   label: Contactos
 - name: producao
-  type: blocks
+  type: image_gallery
+  config: {}
   label: Produção
-  template_types: []
-  config:
-    min: 
-    max: 
+- name: financiamento
+  type: image_gallery
+  config: {}
+  label: Financiamento
 pages:
 - contactos.html
