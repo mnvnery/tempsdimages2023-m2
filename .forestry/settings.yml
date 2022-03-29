@@ -5,6 +5,10 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
+  path: sobre.html
+  label: Sobre
+  match: "**/*"
+- type: document
   path: arquivo.html
   label: Arquivo
 - type: document
