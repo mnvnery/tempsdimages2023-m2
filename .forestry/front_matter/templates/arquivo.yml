@@ -6,3 +6,25 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: editions
+  type: field_group_list
+  fields:
+  - name: year
+    type: text
+    config:
+      required: false
+    label: Ano
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Título
+  config:
+    min: 
+    max: 
+    labelField: year
+  label: Edições
