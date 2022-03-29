@@ -48,3 +48,5 @@ fields:
         format: html-blocks
     label: Info
   label: Momento I
+pages:
+- sobre.html
