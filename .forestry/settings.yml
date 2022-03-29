@@ -5,6 +5,12 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
+  path: parceiros.html
+  label: Parceiros
+- type: document
+  path: contactos.html
+  label: Contactos
+- type: document
   path: sobre.html
   label: Sobre
 - type: document

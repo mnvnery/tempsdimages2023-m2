@@ -1,0 +1,47 @@
+---
+label: Contactos
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- name: contactos
+  type: field_group_list
+  fields:
+  - name: cargo
+    type: text
+    config:
+      required: false
+    label: Cargo
+  - name: nome
+    type: text
+    config:
+      required: false
+    label: Nome
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: telefone
+    type: text
+    config:
+      required: false
+    label: Telefone
+    description: "(opcional)"
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Contactos
+- name: producao
+  type: image_gallery
+  config: {}
+  label: Produção
+- name: financiamento
+  type: image_gallery
+  config: {}
+  label: Financiamento
+pages:
+- contactos.html
