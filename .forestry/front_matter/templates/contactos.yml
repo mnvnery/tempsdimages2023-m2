@@ -35,5 +35,12 @@ fields:
     max: 
     labelField: 
   label: Contactos
+- name: producao
+  type: blocks
+  label: Produção
+  template_types: []
+  config:
+    min: 
+    max: 
 pages:
 - contactos.html
