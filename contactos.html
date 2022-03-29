@@ -29,16 +29,28 @@ financiamento:
 - "/assets/img/screenshot-2022-03-29-at-12-47-03.png"
 - "/assets/img/screenshot-2022-03-29-at-12-46-50.png"
 ---
-<div class="mx-3">
+<div class="ms-3 w-100">
     <div class="d-flex border border-bottom-0 border-pink col-scroll">
-        <div class="text-center border-end border-pink p-5 overflow-scroll">
-        {{page.festival}}
-        <div class="small-text">{{page.tech}}</div>
+        <div class="text-center border-end border-pink p-5 overflow-scroll w-50">
+            {% for c in page.contactos reversed %}
+            <div class="contact-card">
+                <h6>{{ c.cargo }}</h6>
+                <h6><b>{{ c.nome }}</b></h6>
+                <h6 class="font-mesclo">{{ c.email }}</h6>
+            </div>
+            {% endfor %}
         </div>
-        <div class="p-5 overflow-scroll">
-        <h6 class="text-center"><b>{{page.momento_1.title}}</b></h6>
-        <p class="text-center">{{page.momento_1.datas}}</p>
-        {{page.momento_1.info}}
+
+        <div class="p-5 overflow-scroll w-50 text-center">
+            <h6>Produção</h6>
+            {% for logo in page.producao reversed %}
+            <img src="{{site.baseurl}}{{ logo }}" alt="logo Produção" class="w-25">
+            {% endfor %}
+            <h6 class="mt-4">Financiamento</h6>
+            {% for logo in page.financiamento reversed %}
+            <img src="{{site.baseurl}}{{ logo }}" alt="logo financiamento" class="w-25">
+            {% endfor %}
+            
         </div>
     </div>
     {% include momento1.html%}

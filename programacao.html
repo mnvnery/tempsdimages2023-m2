@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="mx-3">
+<div class="ms-3">
 {% include momento1.html %}
 {% for event in site.events %}
-    <div class="event-container d-flex px-2 border border-pink border-top-0">
-        <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-50 mx-4 event-img">
+    <div class="event-container px-2 border border-pink border-top-0">
+        <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-50 mx-4 event-img event-full">
         <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50">
             <div>
                 <h6><b>{{ event.title }}</b></h6>
@@ -17,6 +17,7 @@ layout: default
                     <li>{{ event.times }}</li>
                 </ul>
             </div>
+                <div class="small-text text-start">{{ event.tech }}</div>
             <h2 class="red">+</h2>
         </div>
     </div>
@@ -24,8 +25,8 @@ layout: default
 </div>
 <script>
 $('.event-container').click(function() {
-    $('.event-container').toggleClass("d-block");
-    $('.event-img').toggleClass("event-full");
+    $(this).toggleClass("d-block");
+    $(this).find('.event-img').toggleClass("event-full");
 });
 
 </script>
