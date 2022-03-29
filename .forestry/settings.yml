@@ -10,7 +10,6 @@ sections:
 - type: document
   path: contactos.html
   label: Contactos
-  match: "**/*"
 - type: document
   path: sobre.html
   label: Sobre
