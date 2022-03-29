@@ -28,3 +28,5 @@ fields:
     max: 
     labelField: year
   label: Edições
+pages:
+- arquivo.html
