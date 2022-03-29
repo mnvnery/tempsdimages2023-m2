@@ -15,3 +15,45 @@ fields:
     schema:
       format: html-blocks
   label: O Festival
+- name: tech
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Ficha Técnica
+- name: info_momento_1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: 'Info Momento I '
+- name: momento_1
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Titulo
+  - name: datas
+    type: text
+    config:
+      required: false
+    label: Datas
+  - name: info
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Info
+  label: Momento I
