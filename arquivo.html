@@ -21,3 +21,14 @@ editions:
   title: "<p>Momento I : O QUE MUDA?<br>Momento II: MUDA?</p>"
 
 ---
+<div class="mx-3">
+<div class="d-flex flex-wrap justify-content-center border border-bottom-0 border-dark py-3">
+{% for edition in page.editions %}
+  <div class="edition-container border border-dark text-center py-3 px-5 m-3 dark-shadow">
+    <p>{{ edition.year }}</p>
+    <div class="px-4">{{ edition.title }}</div>
+  </div>
+{% endfor %}
+</div>
+{% include momento1.html%}
+</div>
