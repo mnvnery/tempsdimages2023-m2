@@ -6,3 +6,15 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: financiamento
+  type: image_gallery
+  config: {}
+  label: Financiamento
+- name: acolhimento
+  type: image_gallery
+  config: {}
+  label: Acolhimento
+- name: parceiros_media
+  type: image_gallery
+  config: {}
+  label: Parceiros Media
