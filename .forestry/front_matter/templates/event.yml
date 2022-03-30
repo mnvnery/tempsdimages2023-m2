@@ -46,16 +46,16 @@ fields:
   config:
     required: false
   label: Classificação
-- name: estreia
-  type: text
-  config:
-    required: false
-  label: Estreia
 - name: duracao
   type: text
   config:
     required: false
   label: Duração
+- name: estreia
+  type: text
+  config:
+    required: false
+  label: Estreia
 - name: synopsis
   type: textarea
   default: ''
