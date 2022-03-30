@@ -18,6 +18,15 @@ fields:
   config:
     required: false
   label: Nome Artista
+- name: start_date
+  type: datetime
+  label: Data de Inicio
+  description: "(para ordenar os projetos)"
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - name: dias
   type: tag_list
   default: []
@@ -96,15 +105,6 @@ fields:
     max: 
     labelField: 
   label: Biografias
-- name: start_date
-  type: datetime
-  label: Data de Inicio
-  description: "(para ordenar os projetos)"
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
 pages:
 - _events/anima.html
 - _events/ciclone.html
