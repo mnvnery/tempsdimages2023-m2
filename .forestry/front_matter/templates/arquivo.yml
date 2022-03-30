@@ -23,6 +23,11 @@ fields:
       schema:
         format: html-blocks
     label: Título
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
   config:
     min: 
     max: 
