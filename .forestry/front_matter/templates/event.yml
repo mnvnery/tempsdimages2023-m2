@@ -40,6 +40,11 @@ fields:
   config:
     required: false
   label: Classificação
+- name: estreia
+  type: text
+  config:
+    required: false
+  label: Estreia
 - name: times
   type: text
   config:
