@@ -45,6 +45,11 @@ fields:
   config:
     required: false
   label: Estreia
+- name: duracao
+  type: text
+  config:
+    required: false
+  label: Duração
 - name: times
   type: text
   config:
