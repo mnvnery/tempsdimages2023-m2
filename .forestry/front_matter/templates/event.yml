@@ -97,6 +97,7 @@ fields:
     labelField: 
   label: Biografias
 pages:
+- _events/anima.html
 - _events/ciclone.html
 - _events/de-gelo-diamante-em-bruto.html
 - _events/documentario.html
