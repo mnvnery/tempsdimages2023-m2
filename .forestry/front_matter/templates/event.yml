@@ -35,6 +35,11 @@ fields:
   config:
     required: false
   label: Local
+- name: age
+  type: text
+  config:
+    required: false
+  label: Classificação
 - name: times
   type: text
   config:
