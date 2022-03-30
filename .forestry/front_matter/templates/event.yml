@@ -30,11 +30,12 @@ fields:
     required: false
   label: Data(s)
   description: 'Exemplo formato: 14-16 maio 2022'
-- name: times
+- name: other_date
   type: text
   config:
     required: false
-  label: Horário
+  label: Outra data
+  description: "(se houver horário alternativo)"
 - name: venue
   type: text
   config:
