@@ -96,6 +96,15 @@ fields:
     max: 
     labelField: 
   label: Biografias
+- name: start_date
+  type: datetime
+  label: Data de Inicio
+  description: "(para ordenar os projetos)"
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - _events/anima.html
 - _events/ciclone.html
