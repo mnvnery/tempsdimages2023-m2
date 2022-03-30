@@ -30,6 +30,11 @@ fields:
     required: false
   label: Data(s)
   description: 'Exemplo formato: 14-16 maio 2022'
+- name: times
+  type: text
+  config:
+    required: false
+  label: Horário
 - name: venue
   type: text
   config:
@@ -50,11 +55,6 @@ fields:
   config:
     required: false
   label: Duração
-- name: times
-  type: text
-  config:
-    required: false
-  label: Horário
 - name: synopsis
   type: textarea
   default: ''
