@@ -10,10 +10,11 @@ momento1: "/assets/img/event-2.png"
             <img src="{{site.baseurl}}/assets/img/eagora.svg" alt="Titulo" class="agora-img">
         </div>
         {% include momento1.html %}
-        {% for event in site.events %}
+        {% assign sortedEvents = site.events | sort: 'start_date' %}
+        {% for event in sortedEvents %}
         <div class="event-container d-flex border border-pink border-top-0 pb-3">
-            <div class="p-relative w-50 event-img me-4">
-                <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100 mx-4">
+            <div class="p-relative w-50 event-img mx-4">
+                <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100">
                 <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
             </div>
             <div class="open-event w-50">
@@ -23,23 +24,25 @@ momento1: "/assets/img/event-2.png"
                     <br>
                     <ul>
                         <li>{{ event.dates }}</li>
+                        <li>{{ event.other_date }}</li>
                         <li>{{ event.venue }}</li>
-                        <li>{{ event.times }}</li>
                     </ul>
                     <h2 class="red text-center py-3"><i class="event-btn ri-add-line"></i></h2>
                 </div>
             </div>
             <div class="closed-event">
             <div class="d-flex justify-content-space-between mx-6">
-                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 pe-10">
+                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 ps-5 pe-10">
                     <div>
                         <h6><b>{{ event.title }}</b></h6>
                         <h6>{{ event.artist }}</h6>
                         <br>
                         <ul>
                             <li>{{ event.dates }}</li>
+                            <li>{{ event.other_date }}</li>
                             <li>{{ event.venue }}</li>
-                            <li>{{ event.times }}</li>
+                            <li>{{ event.duracao }}</li>
+                            <li>{{ event.age }}</li>
                         </ul>
                     </div>
                     <div class="small-text text-start pt-3">{{ event.tech }}</div>
@@ -50,9 +53,9 @@ momento1: "/assets/img/event-2.png"
                     <div class="border-top border-pink"></div>
                     <h6 class="bio-titulo">Biografias</h6>
                 </div>
-                <div class="d-flex mx-6 mt-5">
+                <div class="row mx-6 mt-5">
                     {% for bio in event.bios %}
-                        <div class="font-archer w-50 pe-4">{{ bio.bio }}</div>
+                        <div class="font-archer col-12 col-md-6 px-5 pb-3">{{ bio.bio }}</div>
                     {% endfor %}
                 </div>
             <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
