@@ -91,6 +91,4 @@ fields:
     labelField: 
   label: Biografias
 pages:
-- _events/Ghost.html
-- _events/amor-e-politica.html
 - _events/de-gelo-diamante-em-bruto.html
