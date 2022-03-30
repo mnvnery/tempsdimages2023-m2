@@ -6,7 +6,7 @@
 
 @font-face { font-family: "Archer Pro"; src: url("../fonts/Archer-Book-Pro.otf"); font-weight: normal; }
 
-@font-face { font-family: "Archer Pro"; src: url("../fonts/Archer-Medium-Pro.otf"); font-weight: medium; }
+@font-face { font-family: "Archer Pro"; src: url("../fonts/Archer-Medium-Pro.otf"); font-weight: bold; }
 
 body { font-family: "Mesclo"; }
 
@@ -16,23 +16,25 @@ h1, h2, h3, h4, h5, h6 { font-family: "AttilaSansUniform"; }
 
 .font-mesclo { font-family: "Mesclo"; }
 
-.font-archer { font-family: "Archer Pro"; }
+.font-archer { font-family: "Archer Pro"; font-weight: normal; }
 
 .spacing-lg { letter-spacing: 0.1em; }
 
 a { color: inherit; text-decoration: none; }
 
-a:hover { opacity: 0.7; color: #d83dde; }
+a:hover { opacity: 0.7; color: #ff45c5; }
 
-.pink-shadow { box-shadow: -9px -8px 12px -4px #d83dde; }
+.pink-shadow { box-shadow: -9px -8px 12px -4px #ff45c5; }
 
 .dark-shadow { box-shadow: -9px 5px 12px -4px lightgray; }
 
-.border-pink { border-color: #d83dde !important; }
+.red-shadow { box-shadow: -9px 5px 12px -4px #FF3844; }
+
+.border-pink { border-color: #ff45c5 !important; }
 
 .border-red { border-color: #FF3844 !important; }
 
-.pink { color: #d83dde; }
+.pink { color: #ff45c5; }
 
 .red { color: #FF3844; }
 
@@ -42,25 +44,47 @@ ul { list-style: none; padding-left: 0; }
 
 .small-text { font-size: 0.65em; }
 
-.navbar-container { position: sticky; top: 0; left: 0; z-index: 5; background-color: white; width: 100%; box-shadow: 0px 4px 10px -4px white; transition: 0.2s; }
+.p-relative { position: relative; }
 
-.nav-active { border-radius: 50%; border: 1px solid #d83dde; }
+.me-5em { margin-right: 5em; }
 
-.nav-shadow { box-shadow: 0px 4px 10px -4px #d83dde; transition: 0.2s; }
+.navbar-container { position: sticky; top: 0; left: 0; z-index: 6; width: 100%; transition: 0.2s; }
 
-.event-img { margin-top: -10px; margin-bottom: 2em; }
+.nav-active { border-radius: 50%; border: 1px solid #ff45c5; }
 
-.event-container:nth-child(even) { flex-direction: row-reverse; }
+.nav-shadow { box-shadow: 0px 4px 10px -4px #ff45c5; transition: 0.2s; background-color: white; }
 
-.event-container:nth-child(odd) { flex-direction: row; }
+@media only screen and (max-width: 990px) { .pages-nav { position: absolute; top: 0; left: 0; background-color: white; box-shadow: -9px 5px 12px -4px #ff45c5; } }
 
-.event-full { width: 100% !important; }
+.momento-1-header { position: sticky; top: 4.7em; background-color: white; z-index: 5; }
+
+.event-img { margin-top: -10px; margin-bottom: 2em; transition: 0.3s; }
+
+.event-container:nth-child(odd) { flex-direction: row-reverse; }
+
+.event-container:nth-child(even) { flex-direction: row; }
+
+.event-full { width: 97% !important; height: 65vh; object-fit: cover; transition: 0.5s; }
+
+.event-full img { height: 65vh; object-fit: cover; }
 
 .d-block { display: block !important; }
 
-.closed { display: none; }
+.closed-event { display: none; }
 
-.open { display: block; }
+.open-event { display: block; }
+
+.bio-titulo { background-color: white; position: absolute; top: -5px; left: 5rem; padding: 0 1em; font-size: 0.9em; }
+
+.mx-6 { margin: 0 5.5rem; }
+
+.pe-10 { padding-right: 10em; }
+
+.event-btn { transition: 0.2s; }
+
+.event-btn:hover { filter: drop-shadow(-1px 2px 2px #FF3844); transition: 0.2s; }
+
+.ticket-btn { background-color: white; color: #FF3844; position: absolute; top: 1.5em; left: 0.5em; border: 1px solid #FF3844; font-size: 0.8em; }
 
 .hero-img { height: 77vh; width: 100%; object-fit: cover; object-position: 5% 60%; filter: saturate(0); }
 
@@ -68,11 +92,15 @@ ul { list-style: none; padding-left: 0; }
 
 .momento-2-arrow { height: 36vh; }
 
-.momento-2-toggle { height: 90vh; position: sticky; top: 10.5vh; }
+.momento-2-toggle { height: 89vh; position: fixed; top: 4.7em; right: 0; background-color: white; z-index: 5; }
 
 .rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 2.3vh; }
 
 .agora-img { position: absolute; top: 10%; right: 25%; margin: auto; width: 28em; }
+
+.depois { width: 30em; margin-top: 20vh; }
+
+.depois-container { display: none; transition: 0.2s; }
 
 .col-scroll { min-height: 79vh; max-height: 79vh; }
 

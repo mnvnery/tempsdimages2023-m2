@@ -3,6 +3,7 @@
     <head>
         <title>Temps d'Image</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/tempsdimage/assets/css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta itemprop="description" name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu..." />
@@ -13,11 +14,12 @@
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/">
+<link rel="shortcut icon" href="/tempsdimage/assets/img/favicon.ico">
     </head>
     <body>
-        <div class="p-3 pb-0 mb-3 d-flex align-items-center justify-content-between navbar-container">
+        <div class="p-3 pb-0 mb-0 d-flex align-items-center justify-content-between navbar-container">
 <h1><a href="/tempsdimage/"><span class="font-mesclo spacing-lg">TEMPS D'IMAGES</span><span class="ps-5">20 anos</span></a></h1>
-<div class="pages-nav d-flex font-attila">
+<div class="pages-nav d-lg-flex font-attila">
     
         <div ><a href="/tempsdimage/sobre/" class="mx-3">Sobre</a></div>
     
@@ -29,11 +31,33 @@
     
         <div  class="nav-active"><a href="/tempsdimage/arquivo/" class="mx-3">Arquivo</a></div>
     
+    <a href="#" class="px-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="ri-search-line"></i></a>
+    <a href="#" class="font-mesclo">en</a>
 </div>
 </div>
 
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content pink-shadow p-4 border-0 rounded-0">
+        <div class="d-flex justify-content-between">
+            <h5 class="modal-title" id="searchModalLabel">Pesquisa</h5>
+            <button type="button" class="btn-close float-end pink" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body px-0 py-3">
+        <div class="input-group">
+        <div class="form-outline w-75">
+            <input type="search" id="form1" class="form-control rounded-0" />
+        </div>
+        <button type="button" class="btn">
+            <i class="ri-search-line"></i>
+        </button>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
         <div class="d-flex">
-            <div class="mx-3">
+            <div class="ms-3 me-5em">
 <div class="d-flex flex-wrap justify-content-center border border-bottom-0 border-dark py-3">
 
   <div class="edition-container border border-dark text-center py-3 px-5 m-3 dark-shadow">
@@ -86,7 +110,7 @@
     <div class="font-attila">Momento I</div>
     <div>
         <svg width="238" height="24" viewBox="0 0 238 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M231.354 12.3536C231.549 12.1583 231.549 11.8417 231.354 11.6465L228.172 8.46449C227.976 8.26922 227.66 8.26922 227.464 8.46449C227.269 8.65975 227.269 8.97633 227.464 9.17159L230.293 12L227.464 14.8284C227.269 15.0237 227.269 15.3403 227.464 15.5356C227.66 15.7308 227.976 15.7308 228.172 15.5356L231.354 12.3536ZM6 12.5L231 12.5L231 11.5L6 11.5L6 12.5Z" fill="#D946EF"/>
+        <path d="M231.354 12.3536C231.549 12.1583 231.549 11.8417 231.354 11.6465L228.172 8.46449C227.976 8.26922 227.66 8.26922 227.464 8.46449C227.269 8.65975 227.269 8.97633 227.464 9.17159L230.293 12L227.464 14.8284C227.269 15.0237 227.269 15.3403 227.464 15.5356C227.66 15.7308 227.976 15.7308 228.172 15.5356L231.354 12.3536ZM6 12.5L231 12.5L231 11.5L6 11.5L6 12.5Z" fill="rgb(255, 69, 197)"/>
         </svg>
     </div>
     <div>MAIO</div>
@@ -103,22 +127,29 @@
     <div>22</div>
 </div>
 </div>
-            <div class="d-flex flex-column momento-2-toggle p-3 pb-5 pt-4 border-top border-start border-red red justify-content-between ms-3">
-    <div class="rotate-90"> 14 OUT - 7 NOV 2022</div>
-    <div>
-        <svg width="24" height="238" viewBox="0 0 24 238" fill="none" xmlns="http://www.w3.org/2000/svg" class="momento-2-arrow">
-            <g clip-path="url(#clip0_19_4)">
-            <path d="M12.3536 6.64645C12.1583 6.45118 11.8417 6.45118 11.6465 6.64645L8.46448 9.82843C8.26922 10.0237 8.26922 10.3403 8.46448 10.5355C8.65975 10.7308 8.97633 10.7308 9.17159 10.5355L12 7.70711L14.8284 10.5355C15.0237 10.7308 15.3403 10.7308 15.5356 10.5355C15.7308 10.3403 15.7308 10.0237 15.5356 9.82843L12.3536 6.64645ZM12.5 232L12.5 7L11.5 7L11.5 232L12.5 232Z" fill="#FF3844"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_19_4">
-            <rect width="238" height="24" fill="white" transform="translate(7.62939e-06 238) rotate(-90)"/>
-            </clipPath>
-            </defs>    
-        </svg>
+            <div class="border-top border-start border-red d-flex momento-2-toggle">
+    <div class="text-center red depois-container">
+        <img src="/tempsdimage/assets/img/edepois.svg" alt="e depois?" class="ps-5 depois">
+        <div class="mt-5">PROGRAMAÇÃO EM BREVE</div>
     </div>
-    <div class="font-attila rotate-90">Momento II</div>
+    <div class="d-flex flex-column p-3 pb-5 pt-4 red justify-content-between ms-2">
+        <div class="rotate-90"> 14 OUT - 7 NOV 2022</div>
+        <div>
+            <svg width="24" height="238" viewBox="0 0 24 238" fill="none" xmlns="http://www.w3.org/2000/svg" class="momento-2-arrow">
+                <g clip-path="url(#clip0_19_4)">
+                <path d="M12.3536 6.64645C12.1583 6.45118 11.8417 6.45118 11.6465 6.64645L8.46448 9.82843C8.26922 10.0237 8.26922 10.3403 8.46448 10.5355C8.65975 10.7308 8.97633 10.7308 9.17159 10.5355L12 7.70711L14.8284 10.5355C15.0237 10.7308 15.3403 10.7308 15.5356 10.5355C15.7308 10.3403 15.7308 10.0237 15.5356 9.82843L12.3536 6.64645ZM12.5 232L12.5 7L11.5 7L11.5 232L12.5 232Z" fill="rgba(239, 0, 58)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_4">
+                <rect width="238" height="24" fill="white" transform="translate(7.62939e-06 238) rotate(-90)"/>
+                </clipPath>
+                </defs>    
+            </svg>
+        </div>
+        <div class="font-attila rotate-90">Momento II</div>
+    </div>
 </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
