@@ -1,8 +1,31 @@
-<div class="p-3 pb-0 mb-3 d-flex align-items-center justify-content-between navbar-container">
+<div class="p-3 pb-0 mb-0 d-flex align-items-center justify-content-between navbar-container">
 <h1><a href="{{site.baseurl}}/"><span class="font-mesclo spacing-lg">TEMPS D'IMAGES</span><span class="ps-5">20 anos</span></a></h1>
-<div class="pages-nav d-flex font-attila">
+<div class="pages-nav d-lg-flex font-attila">
     {% for nav in site.data.navigation %}
         <div {% if nav.url == page.url %} class="nav-active"{% endif %}><a href="{{ site.baseurl}}{{ nav.url }}" class="mx-3">{{ nav.text }}</a></div>
     {% endfor %}
+    <a href="#" class="px-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="ri-search-line"></i></a>
+    <a href="#" class="font-mesclo">en</a>
+</div>
+</div>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content pink-shadow p-4 border-0 rounded-0">
+        <div class="d-flex justify-content-between">
+            <h5 class="modal-title" id="searchModalLabel">Pesquisa</h5>
+            <button type="button" class="btn-close float-end pink" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body px-0 py-3">
+        <div class="input-group">
+        <div class="form-outline w-75">
+            <input type="search" id="form1" class="form-control rounded-0" />
+        </div>
+        <button type="button" class="btn">
+            <i class="ri-search-line"></i>
+        </button>
+        </div>
+    </div>
+    </div>
 </div>
 </div>

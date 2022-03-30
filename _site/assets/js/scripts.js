@@ -7,3 +7,7 @@ $(window).scroll(function() {
         $(".navbar-container").removeClass("nav-shadow");
     }
 });
+
+$('.momento-2-toggle').click(function() {  
+    $('.depois-container').toggle();
+});

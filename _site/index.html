@@ -3,6 +3,7 @@
     <head>
         <title>Temps d'Image</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/tempsdimage/assets/css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta itemprop="description" name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu..." />
@@ -13,11 +14,12 @@
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/">
+<link rel="shortcut icon" href="/tempsdimage/assets/img/favicon.ico">
     </head>
     <body>
-        <div class="p-3 pb-0 mb-3 d-flex align-items-center justify-content-between navbar-container">
+        <div class="p-3 pb-0 mb-0 d-flex align-items-center justify-content-between navbar-container">
 <h1><a href="/tempsdimage/"><span class="font-mesclo spacing-lg">TEMPS D'IMAGES</span><span class="ps-5">20 anos</span></a></h1>
-<div class="pages-nav d-flex font-attila">
+<div class="pages-nav d-lg-flex font-attila">
     
         <div ><a href="/tempsdimage/sobre/" class="mx-3">Sobre</a></div>
     
@@ -29,13 +31,35 @@
     
         <div ><a href="/tempsdimage/arquivo/" class="mx-3">Arquivo</a></div>
     
+    <a href="#" class="px-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="ri-search-line"></i></a>
+    <a href="#" class="font-mesclo">en</a>
 </div>
 </div>
 
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content pink-shadow p-4 border-0 rounded-0">
+        <div class="d-flex justify-content-between">
+            <h5 class="modal-title" id="searchModalLabel">Pesquisa</h5>
+            <button type="button" class="btn-close float-end pink" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body px-0 py-3">
+        <div class="input-group">
+        <div class="form-outline w-75">
+            <input type="search" id="form1" class="form-control rounded-0" />
+        </div>
+        <button type="button" class="btn">
+            <i class="ri-search-line"></i>
+        </button>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
         <div class="d-flex">
-            <div class="hero-section ps-3">
+            <div class="hero-section ps-3 me-5em">
     <div class="d-flex flex-column w-100">
-        <div class="hero-container pink-shadow mb-3">
+        <div class="hero-container pink-shadow mb-3 mt-1">
             <img src="/tempsdimage/assets/img/event-2.png" alt="Momento 1" class="hero-img">
             <img src="/tempsdimage/assets/img/eagora.svg" alt="Titulo" class="agora-img">
         </div>
@@ -43,7 +67,7 @@
     <div class="font-attila">Momento I</div>
     <div>
         <svg width="238" height="24" viewBox="0 0 238 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M231.354 12.3536C231.549 12.1583 231.549 11.8417 231.354 11.6465L228.172 8.46449C227.976 8.26922 227.66 8.26922 227.464 8.46449C227.269 8.65975 227.269 8.97633 227.464 9.17159L230.293 12L227.464 14.8284C227.269 15.0237 227.269 15.3403 227.464 15.5356C227.66 15.7308 227.976 15.7308 228.172 15.5356L231.354 12.3536ZM6 12.5L231 12.5L231 11.5L6 11.5L6 12.5Z" fill="#D946EF"/>
+        <path d="M231.354 12.3536C231.549 12.1583 231.549 11.8417 231.354 11.6465L228.172 8.46449C227.976 8.26922 227.66 8.26922 227.464 8.46449C227.269 8.65975 227.269 8.97633 227.464 9.17159L230.293 12L227.464 14.8284C227.269 15.0237 227.269 15.3403 227.464 15.5356C227.66 15.7308 227.976 15.7308 228.172 15.5356L231.354 12.3536ZM6 12.5L231 12.5L231 11.5L6 11.5L6 12.5Z" fill="rgb(255, 69, 197)"/>
         </svg>
     </div>
     <div>MAIO</div>
@@ -60,11 +84,29 @@
     <div>22</div>
 </div>
         
-            <div class="event-container d-flex px-2 border border-pink border-top-0">
-                <img src="/tempsdimage/assets/img/event-1.png" alt="Event Image" class="pink-shadow w-50 mx-4 event-img">
-                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50">
+        <div class="event-container d-flex border border-pink border-top-0 pb-3">
+            <div class="p-relative w-50 event-img me-4">
+                <img src="/tempsdimage/assets/img/event-1.png" alt="Event Image" class="pink-shadow w-100 mx-4">
+                <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
+            </div>
+            <div class="open-event w-50">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                    <h6><b>Ghost</b></h6>
+                    <h6>Luis Marrafa</h6>
+                    <br>
+                    <ul>
+                        <li>12-13 maio 2022 </li>
+                        <li>CCB - Pequeno Auditório</li>
+                        <li>19h</li>
+                    </ul>
+                    <h2 class="red text-center py-3"><i class="event-btn ri-add-line"></i></h2>
+                </div>
+            </div>
+            <div class="closed-event">
+            <div class="d-flex justify-content-space-between mx-6">
+                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 pe-10">
                     <div>
-                        <h6><b></b></h6>
+                        <h6><b>Ghost</b></h6>
                         <h6>Luis Marrafa</h6>
                         <br>
                         <ul>
@@ -73,13 +115,46 @@
                             <li>19h</li>
                         </ul>
                     </div>
-                    <h2 class="red">+</h2>
+                    <div class="small-text text-start pt-3"><p>Conceito, coreografia e interpretação: Luís Mafarra<br>Conselheiro artístico: Alain Platel<br>Figurinos originais: Catarina Morla, Luis Marrafa<br>Música: J.S. Bach by David Fray with The Deutsche Kammerphilharmonie Bremen, Ein Choralbuch für J.S. Bach by Stuttgart Gachinger Kantorei<br>Música original: Luís Marrafa<br>Desenho de luz: Zeca Iglésias<br>Operador drone: Petra Van Gompel<br>Fotografia e edição: Luís Marrafa<br>Agradecimentos: Alain Platel, Petra Van Gompel, Bruno Marchand<br>Produção: Marrafa Dance Company<br>Apoios: les ballets C de la B, Temps D’Images</p></div>
+                </div>
+                <div class="w-50 font-archer px-5"><p>Um solo interpretado por um homem que se desdobra momentaneamente, dando origem a duas personagens com discursos independentes e acompanhados por visões utópicas. A interpretação de Luis Marrafa investe na geração de imagens, profundas e abstractas, de um indivíduo assolado com o facto de estar vivo com a exacta idade que o seu pai tinha quando morreu. A peça, marcada por uma deliberada estranheza cénica e coreográfica, acompanha o desfiar de um pensamento metafísico onde afluem várias questões sobre a existência, o absurdo da vida e a presença da morte.</p></div>
+                </div>
+                <div class="p-relative mt-4">
+                    <div class="border-top border-pink"></div>
+                    <h6 class="bio-titulo">Biografias</h6>
+                </div>
+                <div class="d-flex mx-6 mt-5">
+                    
+                        <div class="font-archer w-50 pe-4">Luis Marrafa, nasceu em 1975, viveu até aos seus 9 anos em Schüttorf na Alemanha, mudou-se para Évora e depois para Lisboa, passou por Londres e neste momento vive e trabalha em Bruxelas desde 2009.
+
+Luis Marrafa, licenciou-se na Escola Superior de Dança em Lisboa. Em Bruxelas é o director artístico da companhia de dança Marrafa company e de StairCase.studio Brussels onde exerce também a curadoria artística. Cria e produz as suas próprias obras como coreógrafo, intérprete e compositor de som, inspirando-se intuitivamente na sua experiência e no ambiente multicultural à sua volta.</div>
+                    
+                </div>
+            <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
+            </div>
+        </div>
+    
+        <div class="event-container d-flex border border-pink border-top-0 pb-3">
+            <div class="p-relative w-50 event-img me-4">
+                <img src="/tempsdimage/assets/img/event-2.png" alt="Event Image" class="pink-shadow w-100 mx-4">
+                <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
+            </div>
+            <div class="open-event w-50">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                    <h6><b>Amor e Política</b></h6>
+                    <h6>Maria Gil & Miguel Bonneville</h6>
+                    <br>
+                    <ul>
+                        <li>14-16 maio 2022</li>
+                        <li>Casa Capitão</li>
+                        <li>12h</li>
+                    </ul>
+                    <h2 class="red text-center py-3"><i class="event-btn ri-add-line"></i></h2>
                 </div>
             </div>
-        
-            <div class="event-container d-flex px-2 border border-pink border-top-0">
-                <img src="/tempsdimage/assets/img/event-2.png" alt="Event Image" class="pink-shadow w-50 mx-4 event-img">
-                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50">
+            <div class="closed-event">
+            <div class="d-flex justify-content-space-between mx-6">
+                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 pe-10">
                     <div>
                         <h6><b>Amor e Política</b></h6>
                         <h6>Maria Gil & Miguel Bonneville</h6>
@@ -90,13 +165,42 @@
                             <li>12h</li>
                         </ul>
                     </div>
-                    <h2 class="red">+</h2>
+                    <div class="small-text text-start pt-3"><p>Criação e interpretação: Maria Gil, Miguel Bonneville<br>Apoio Cénico: Pedro Silva<br>Apoio Dramatúrgico: Filipa Reis<br>Desenho de Luz: Artur Pispalhas<br>Operação: Nuno Patinho<br>Produção executiva: Vítor Alves Brotas<br>Administração: Susana Martinho Lopes<br>Imagens de Divulgação: Joana Linda<br>Registo Vídeo: Cláudia Alves<br>Residência de Criação: Centro Cultural do Candoso, Guimarães<br>Produção: Teatro do Silêncio<br>Co-produção: Negócio/ZDB e Festival Temps D’Images<br>Apoios e Agradecimentos: Florineve, Wip – Hairport – Projecto apoiado pela Fundação Calouste Gulbenkian e pela Junta de Freguesia de Carnide.</p></div>
+                </div>
+                <div class="w-50 font-archer px-5"><p>Como é que podemos pensar politicamente o amor? Como é que podemos pensar um assunto que é normalmente visto como sendo algo do foro íntimo e privado de cada um? Que relação existe entre os afectos e a forma como nos organizamos socialmente e vivemos uns com os outros?</p><p>E será a política algo a que voltamos apenas em ano de eleições? Como é que vivemos a política nas nossas vidas, na privacidade das nossas casas?</p><p>Nesta palestra performance, a dramaturgia constrói-se à volta de entrevistas realizadas a políticos pertencentes a partidos com representação parlamentar, independentes, e pessoas ligadas a movimentos sociais; bem como, entrevistas realizadas a ex-namorados, cartas de amor e fragmentos de diários pessoais. Durante o espectáculo haverá a recriação de uma performance do século XX.</p></div>
+                </div>
+                <div class="p-relative mt-4">
+                    <div class="border-top border-pink"></div>
+                    <h6 class="bio-titulo">Biografias</h6>
+                </div>
+                <div class="d-flex mx-6 mt-5">
+                    
+                </div>
+            <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
+            </div>
+        </div>
+    
+        <div class="event-container d-flex border border-pink border-top-0 pb-3">
+            <div class="p-relative w-50 event-img me-4">
+                <img src="/tempsdimage/assets/img/mappa-mundi.jpg" alt="Event Image" class="pink-shadow w-100 mx-4">
+                <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
+            </div>
+            <div class="open-event w-50">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                    <h6><b>Mappa Mundi</b></h6>
+                    <h6>Joana de Verona & Eduardo Breda</h6>
+                    <br>
+                    <ul>
+                        <li>20-21 maio 2022</li>
+                        <li>Appleton</li>
+                        <li>19h</li>
+                    </ul>
+                    <h2 class="red text-center py-3"><i class="event-btn ri-add-line"></i></h2>
                 </div>
             </div>
-        
-            <div class="event-container d-flex px-2 border border-pink border-top-0">
-                <img src="/tempsdimage/assets/img/mappa-mundi.jpg" alt="Event Image" class="pink-shadow w-50 mx-4 event-img">
-                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50">
+            <div class="closed-event">
+            <div class="d-flex justify-content-space-between mx-6">
+                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 pe-10">
                     <div>
                         <h6><b>Mappa Mundi</b></h6>
                         <h6>Joana de Verona & Eduardo Breda</h6>
@@ -107,29 +211,56 @@
                             <li>19h</li>
                         </ul>
                     </div>
-                    <h2 class="red">+</h2>
+                    <div class="small-text text-start pt-3"></div>
                 </div>
+                <div class="w-50 font-archer px-5"><p>A palavra é uma ferramenta que encerra em si mesma o poder de nos ajudar a derrubar e, ao mesmo tempo, transporta em si a maior das fraquezas: querer traduzir em linguagem o que não é possível traduzir.<br>Em MAPPA MUNDI, confrontamos as nossas memórias individuais e coletivas num mundo cada vez mais globalizado e dividido. Questionando a utilização da palavra enquanto ferramenta de comunicação (tanto no plano da oralidade como na escrita), expõe-se os seus limites/fronteiras num mundo em expansão. Sobre o pressuposto da sobreposição de imagens e discursos e tendo em conta o domínio das várias valências artísticas dos performers (teatro/movimento/ cinema), MAPPA MUNDI explora diversas ideias formais e conceptuais na base da criação artística, deixando-se influenciar pelos contextos atuais que nos inquietam, refletindo e agindo sobre eles.</p><p>Somos contemporâneos de um tempo, nosso, que se compõe de tempos passados e tempos futuros. Em um mundo lotado, repleto de avanços tecnológicos, preconceitos e rótulos, vislumbramos um mapa que não temos. Este lugar multidisciplinar, que pretende ser estimulante, levanta questões sobre identidade, territórios e suas fronteiras.<br>No corpo, instrumento da linguagem, os olhos de quem não se sente no seu país de origem abrem e fecham.</p></div>
+                </div>
+                <div class="p-relative mt-4">
+                    <div class="border-top border-pink"></div>
+                    <h6 class="bio-titulo">Biografias</h6>
+                </div>
+                <div class="d-flex mx-6 mt-5">
+                    
+                </div>
+            <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
             </div>
-            
+        </div>
+          
     </div>
 </div>
 
-            <div class="d-flex flex-column momento-2-toggle p-3 pb-5 pt-4 border-top border-start border-red red justify-content-between ms-3">
-    <div class="rotate-90"> 14 OUT - 7 NOV 2022</div>
-    <div>
-        <svg width="24" height="238" viewBox="0 0 24 238" fill="none" xmlns="http://www.w3.org/2000/svg" class="momento-2-arrow">
-            <g clip-path="url(#clip0_19_4)">
-            <path d="M12.3536 6.64645C12.1583 6.45118 11.8417 6.45118 11.6465 6.64645L8.46448 9.82843C8.26922 10.0237 8.26922 10.3403 8.46448 10.5355C8.65975 10.7308 8.97633 10.7308 9.17159 10.5355L12 7.70711L14.8284 10.5355C15.0237 10.7308 15.3403 10.7308 15.5356 10.5355C15.7308 10.3403 15.7308 10.0237 15.5356 9.82843L12.3536 6.64645ZM12.5 232L12.5 7L11.5 7L11.5 232L12.5 232Z" fill="#FF3844"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_19_4">
-            <rect width="238" height="24" fill="white" transform="translate(7.62939e-06 238) rotate(-90)"/>
-            </clipPath>
-            </defs>    
-        </svg>
+<script>
+    $('.event-container').click(function() {
+        $(this).toggleClass("d-block");
+        $(this).find('.event-img').toggleClass("event-full");
+        $(this).find(".closed-event").toggle();
+        $(this).find(".open-event").toggle();
+    });
+</script>
+    
+            <div class="border-top border-start border-red d-flex momento-2-toggle">
+    <div class="text-center red depois-container">
+        <img src="/tempsdimage/assets/img/edepois.svg" alt="e depois?" class="ps-5 depois">
+        <div class="mt-5">PROGRAMAÇÃO EM BREVE</div>
     </div>
-    <div class="font-attila rotate-90">Momento II</div>
+    <div class="d-flex flex-column p-3 pb-5 pt-4 red justify-content-between ms-2">
+        <div class="rotate-90"> 14 OUT - 7 NOV 2022</div>
+        <div>
+            <svg width="24" height="238" viewBox="0 0 24 238" fill="none" xmlns="http://www.w3.org/2000/svg" class="momento-2-arrow">
+                <g clip-path="url(#clip0_19_4)">
+                <path d="M12.3536 6.64645C12.1583 6.45118 11.8417 6.45118 11.6465 6.64645L8.46448 9.82843C8.26922 10.0237 8.26922 10.3403 8.46448 10.5355C8.65975 10.7308 8.97633 10.7308 9.17159 10.5355L12 7.70711L14.8284 10.5355C15.0237 10.7308 15.3403 10.7308 15.5356 10.5355C15.7308 10.3403 15.7308 10.0237 15.5356 9.82843L12.3536 6.64645ZM12.5 232L12.5 7L11.5 7L11.5 232L12.5 232Z" fill="rgba(239, 0, 58)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_4">
+                <rect width="238" height="24" fill="white" transform="translate(7.62939e-06 238) rotate(-90)"/>
+                </clipPath>
+                </defs>    
+            </svg>
+        </div>
+        <div class="font-attila rotate-90">Momento II</div>
+    </div>
 </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

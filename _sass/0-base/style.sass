@@ -1,6 +1,7 @@
-$pink: rgb(216, 61, 222)
+$pink: rgb(255, 69, 197)
 $red: #FF3844
-    
+$modal-backdrop-bg: white
+
 @font-face 
     font-family: "AttilaSansUniform"
     src: url("../fonts/AttilaSansUniform-Regular.otf")
@@ -23,7 +24,7 @@ $red: #FF3844
 @font-face 
     font-family: "Archer Pro"
     src: url("../fonts/Archer-Medium-Pro.otf")
-    font-weight: medium
+    font-weight: bold
 
 body
     font-family: "Mesclo"
@@ -39,6 +40,7 @@ h1, h2, h3, h4, h5, h6
 
 .font-archer
     font-family: "Archer Pro"
+    font-weight: normal
 
 .spacing-lg
     letter-spacing: 0.1em
@@ -56,6 +58,9 @@ a:hover
 
 .dark-shadow
     box-shadow: -9px 5px 12px -4px lightgray
+
+.red-shadow
+    box-shadow: -9px 5px 12px -4px $red
 
 .border-pink
     border-color: $pink !important
@@ -80,3 +85,9 @@ ul
 
 .small-text
     font-size: 0.65em
+
+.p-relative
+    position: relative
+
+.me-5em
+    margin-right: 5em
