@@ -31,7 +31,8 @@ fields:
   type: tag_list
   default: []
   description: 'Adicionar os números dos dias em que o evento ocorre. Apenas os números,
-    cada um como um elemento diferente. ex: 12, 13, 14'
+    cada um como um elemento diferente. ex: 12, 13, 14. Para que se possa filtrar
+    por dia.'
   label: Dias
 - name: dates
   type: text
