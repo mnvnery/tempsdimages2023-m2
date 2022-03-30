@@ -10,10 +10,10 @@ fields:
   type: image_gallery
   config: {}
   label: Financiamento
-- name: acolhimento
+- name: apoio
   type: image_gallery
   config: {}
-  label: Acolhimento
+  label: Apoio
 - name: parceiros_media
   type: image_gallery
   config: {}
