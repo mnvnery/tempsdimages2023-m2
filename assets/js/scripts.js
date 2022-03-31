@@ -11,3 +11,10 @@ $(window).scroll(function() {
 $('.momento-2-toggle').click(function() {  
     $('.depois-container').toggle();
 });
+
+$(document).ready(function(){
+	$('#close-icon').click(function(){
+		$(this).toggleClass('open');
+        $('.pages-nav').toggleClass('pages-nav-open');
+	});
+});

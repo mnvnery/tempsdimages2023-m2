@@ -9,21 +9,11 @@
     margin-bottom: 2em
     transition: 0.3s
 
-.event-container:nth-child(even)
+.event-container:nth-child(odd)
     flex-direction: row
 
-.event-container:nth-child(odd)
+.event-container:nth-child(even)
     flex-direction: row-reverse
-
-.event-full
-    width: 97% !important
-    height: 65vh
-    object-fit: cover
-    transition: 0.5s
-
-.event-full img
-    height: 65vh
-    object-fit: cover
 
 .d-block
     display: block !important
@@ -43,12 +33,6 @@
     padding: 0 1em 
     font-size: 0.9em
 
-.mx-6
-    margin: 0 5.5rem
-
-.pe-10
-    padding-right: 10em
-
 .event-btn
     transition: 0.2s
 
@@ -67,9 +51,50 @@
     font-size: 0.8em
 
 .day-active
-    border: 1px solid $pink
+    border: 1px solid $pink !important
     border-radius: 50%
     padding: 0 8px
 
 .day
     width: 10%
+
+.momento-1-header a
+    border: 1px solid white
+    border-radius: 50%
+    padding: 0 8px
+
+.momento-1-header a:hover
+    border: 1px solid $pink
+    border-radius: 50%
+    padding: 0 8px
+
+.ver-prog:hover
+    filter: drop-shadow(-1px 2px 2px rgba(255,69, 197, 0.4))
+    transition: 0.2s
+
+@media only screen and (min-width: 990px)
+    .mx-6
+        margin: 0 5.5rem
+
+    .pe-10
+        padding-right: 7em
+
+    .event-full
+        width: 97% !important
+        height: 65vh
+        object-fit: cover
+        transition: 0.5s
+
+    .event-full img
+        height: 65vh
+        object-fit: cover
+
+    .w-lg-50
+        width: 50%
+
+@media only screen and (max-width: 990px)
+    .pe-10
+        padding-left: 0
+
+    .bio-titulo
+        left: 1rem

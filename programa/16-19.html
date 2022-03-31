@@ -32,15 +32,14 @@ layout: default
             </svg>            
         </div>
         <div>JUN</div>
-        <div id="day-3" class="day-active">3 — 5</div>
-        <a href="{{ site.baseurl }}/programa/16-19" id="day-16">16</a>
-        <a href="{{ site.baseurl }}/programa/16-19" id="day-17">17</a>
-        <a href="{{ site.baseurl }}/programa/16-19" id="day-18">18</a>
-        <a href="{{ site.baseurl }}/programa/16-19"  id="day-19">19</a>
+        <a href="{{ site.baseurl }}/programa/3-5" id="day-3">3</a>
+        <a href="{{ site.baseurl }}/programa/3-5" id="day-4">4</a>
+        <a href="{{ site.baseurl }}/programa/3-5" id="day-5">5</a>
+        <div id="day-16" class="day-active">16 — 19</div>
     </div>
 
 
-{% assign sortedEvents = site.events | sort: 'start_date' | where: "dias", "3-6" %}
+{% assign sortedEvents = site.events | sort: 'start_date' | where: "dias", "16-6" %}
 {% for event in sortedEvents %}
     <div class="event-container d-flex border border-pink border-top-0 pb-3">
         <div class="p-relative w-50 event-img mx-4">
@@ -91,10 +90,9 @@ layout: default
             <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
         </div>
     </div>
-{% endfor %}
-<div class="text-center pink mt-2 w-100"><a href="{{ site.baseurl }}/programacao" class="ver-prog">Ver Programação</a></div>
+{% endfor %}  
+<div class="text-center pink mt-2 w-100"><a href="{{ site.baseurl }}/programacao">Ver Programação</a></div>
 </div>
-
 <script>
 $('.event-container').click(function() {
     $(this).toggleClass("d-block");
