@@ -18,13 +18,28 @@ parceiros_media:
 - "/assets/img/antena1_positivo_horiz_rgb.png"
 
 ---
-<img src="/assets/img/cal-_-preto.jpg"><img src="/assets/img/marca_ccb_rgb.png"><img src="/assets/img/tba_extenso_preto.png"><img src="/assets/img/logomeridional_2017_preto-horizontal.jpg"><img src="/assets/img/antena1_positivo_horiz_rgb.png"><img src="/assets/img/antena2_positivo_horiz_rgb.png"><img src="/assets/img/antena3_positivo_horiz_rgb.png"><img src="/assets/img/logo_acl-01.png"><div class="ms-3 w-100 me-5em">
-<div class="border border-pink border-bottom-0 col-scroll text-center p-3">
-    <div>
-        <h5>Financiamento</h5>
-        <h5>Acolhimento</h5>
-        <h5>Parceiros Media</h5>
+<div class="ms-3 me-5em w-100">
+    <div class="border border-pink border-bottom-0 col-scroll text-center p-3 pt-5">
+        <div>
+            <h5>Financiamento</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for img in page.financiamento %}
+                    <img src="{{ site.baseurl}}{{ img }}" alt="logo financiamento" class="logo-parceiros">
+                {% endfor %}
+            </div>
+            <h5>Apoio</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for img in page.apoio %}
+                    <img src="{{ site.baseurl}}{{ img }}" alt="logo apoio" class="logo-parceiros">
+                {% endfor %}
+            </div>
+            <h5>Parceiros Media</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for img in page.parceiros_media %}
+                    <img src="{{ site.baseurl}}{{ img }}" alt="logo parceitos_media" class="logo-parceiros">
+                {% endfor %}
+            </div>
+        </div>
     </div>
-</div>
-{% include momento1.html %}
+    {% include momento1.html %}
 </div>
