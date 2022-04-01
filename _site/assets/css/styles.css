@@ -137,7 +137,7 @@ p { line-height: 1.4em; }
 
 .carousel-cell img { width: 100%; height: 77vh; object-fit: cover; }
 
-@media only screen and (max-width: 990px) { .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 4em; } .agora-img { top: 5%; right: 3%; width: 18em; } .hero-img { height: 75vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } }
+@media only screen and (max-width: 990px) { .carousel-cell { height: 68vh; } .carousel-cell img { height: 68vh; } .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 4em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 68vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 5em !important; } }
 
 .overflow-scroll { overflow-y: scroll; }
 
@@ -149,7 +149,7 @@ p { line-height: 1.4em; }
 
 .sobre-s-left { border-bottom: 1px solid #ff45c5; }
 
-@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 77vh; max-height: 77vh; overflow: scroll; } }
+@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 68vh; max-height: 68vh; overflow: scroll; } }
 
 @media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid #ff45c5; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } }
 
