@@ -1,7 +1,7 @@
 ---
 label: Event
 hide_body: true
-display_field: show
+display_field: title
 fields:
 - name: image
   type: file
