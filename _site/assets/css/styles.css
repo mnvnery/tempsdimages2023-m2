@@ -111,7 +111,7 @@ p { line-height: 1.4em; }
 
 .ver-prog:hover { filter: drop-shadow(-1px 2px 2px rgba(255, 69, 197, 0.4)); transition: 0.2s; }
 
-.img-credits { position: absolute; bottom: 10px; right: 15px; color: grey; display: none; }
+.img-credits { position: absolute; bottom: 10px; right: 15px; color: white; display: none; }
 
 @media only screen and (min-width: 990px) { .mx-6 { margin: 0 5.5rem; } .pe-10 { padding-right: 7em; } .event-full { width: 97% !important; height: 65vh; object-fit: cover; transition: 0.5s; } .event-full img { height: 65vh; object-fit: cover; } .w-lg-50 { width: 50%; } }
 
