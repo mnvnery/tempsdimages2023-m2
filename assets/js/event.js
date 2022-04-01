@@ -3,6 +3,7 @@ $('.event-container').click(function() {
     $(this).find('.event-img').toggleClass("event-full");
     $(this).find(".closed-event").toggle();
     $(this).find(".open-event").toggle();
+    $(this).find(".img-credits").toggle();
 });
 $('.event-container').hover(function() {
     let days = $(this).data('days');

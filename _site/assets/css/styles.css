@@ -111,9 +111,11 @@ p { line-height: 1.4em; }
 
 .ver-prog:hover { filter: drop-shadow(-1px 2px 2px rgba(255, 69, 197, 0.4)); transition: 0.2s; }
 
+.img-credits { position: absolute; bottom: 10px; right: 15px; color: grey; display: none; }
+
 @media only screen and (min-width: 990px) { .mx-6 { margin: 0 5.5rem; } .pe-10 { padding-right: 7em; } .event-full { width: 97% !important; height: 65vh; object-fit: cover; transition: 0.5s; } .event-full img { height: 65vh; object-fit: cover; } .w-lg-50 { width: 50%; } }
 
-@media only screen and (max-width: 990px) { .pe-10 { padding-left: 0; } .bio-titulo { left: 1rem; } }
+@media only screen and (max-width: 990px) { .pe-10 { padding-left: 0; } .bio-titulo { left: 1rem; } .img-credits { bottom: 6px; right: 10px; } }
 
 .hero-img { height: 77vh; width: 100%; object-fit: cover; filter: saturate(0); }
 
@@ -125,15 +127,17 @@ p { line-height: 1.4em; }
 
 .rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 2.3vh; }
 
-.agora-img { position: absolute; top: 10%; right: 25%; margin: auto; width: 28em; }
+.agora-img { position: absolute; top: 8%; right: 33%; margin: auto; width: 22em; }
 
 .depois { width: 30em; margin-top: 20vh; }
 
 .depois-container { display: none; transition: 0.2s; }
 
-@media only screen and (max-width: 990px) { .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 4em; } .agora-img { top: 5%; right: 3%; width: 18em; } .hero-img { height: 75vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } }
+.carousel-cell { width: 100%; height: 77vh; }
 
-.col-scroll { min-height: 79vh; max-height: 79vh; }
+.carousel-cell img { width: 100%; height: 77vh; object-fit: cover; }
+
+@media only screen and (max-width: 990px) { .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 4em; } .agora-img { top: 5%; right: 3%; width: 18em; } .hero-img { height: 75vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } }
 
 .overflow-scroll { overflow-y: scroll; }
 
@@ -141,8 +145,12 @@ p { line-height: 1.4em; }
 
 .contact-card { margin-bottom: 2.5em; }
 
-.festival { width: 58%; }
-
 .logo-parceiros { height: 3em; width: auto; margin: 0 1em; }
+
+.sobre-s-left { border-bottom: 1px solid #ff45c5; }
+
+@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 77vh; max-height: 77vh; overflow: scroll; } }
+
+@media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid #ff45c5; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } }
 
 /*# sourceMappingURL=styles.css.map */

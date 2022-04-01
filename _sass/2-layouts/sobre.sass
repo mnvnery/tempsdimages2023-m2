@@ -1,7 +1,3 @@
-.col-scroll
-    min-height: 79vh
-    max-height: 79vh
-
 .overflow-scroll
     overflow-y: scroll
 
@@ -11,10 +7,34 @@
 .contact-card
     margin-bottom: 2.5em
 
-.festival 
-    width: 58%
-
 .logo-parceiros
     height: 3em
     width: auto
     margin: 0 1em
+
+.sobre-s-left
+    border-bottom: 1px solid $pink
+
+@media only screen and (max-width: 990px)
+    .col-scroll, .arquivo-scroll
+        min-height: 77vh
+        max-height: 77vh
+        overflow: scroll
+
+@media only screen and (min-width: 990px)
+    .col-scroll, .arquivo-scroll
+        min-height: 79vh
+        max-height: 79vh
+
+    .sobre-section, .arquivo-scroll
+        overflow: scroll
+        
+    .sobre-s-left
+        border-right: 1px solid $pink
+        border-bottom: 0
+
+    .festival 
+        width: 58%
+
+    .info-momento
+        width: 75%

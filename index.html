@@ -1,14 +1,22 @@
 ---
 layout: default
 momento1: "/assets/img/event-2.png"
-
+images:
+- "/assets/img/prog-01-00-imagem-joao_duarte.webp"
+- "/assets/img/prog-03-00-imagem-tuna.webp"
+- "/assets/img/prog-04-00-imagem-miguel-angelo-santarem.webp"
+- "/assets/img/prog-05-00-imagem-daniela-gandra.jpeg"
+- "/assets/img/prog-06-00-imagem-alipio-padilha.webp"
 ---
 <div class="hero-section ps-3 me-5em">
     <div class="d-flex flex-column w-100">
         <div class="hero-container pink-shadow mb-3 mt-1">
-            <img src="{{site.baseurl}}{{page.momento1}}" alt="Momento 1" class="hero-img">
-            <img src="{{site.baseurl}}/assets/img/eagora.svg" alt="Titulo" class="agora-img desktop">
-            <img src="{{site.baseurl}}/assets/img/eagora-mobile.svg" alt="Titulo" class="agora-img mobile">
+            <div class="main-carousel hero-img">
+                {% for img in page.images %}
+                    <div class="carousel-cell"><img src="{{ site.baseurl }}{{ img }}" alt=""></div>
+                {% endfor %}
+            </div>
+            <img src="{{ site.baseurl }}/assets/img/eagora.svg" alt="Titulo" class="agora-img">
         </div>
         {% include momento1.html %}
         {% assign sortedEvents = site.events | sort: 'start_date' %}
@@ -16,6 +24,7 @@ momento1: "/assets/img/event-2.png"
         <div class="event-container d-lg-flex border border-pink border-top-0 pb-3" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
             <div class="p-relative w-lg-50 event-img mx-4">
                 <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100">
+                <div class="img-credits small-text">©Joao Duarte</div>
                 <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
             </div>
             <div class="open-event w-lg-50">
@@ -66,4 +75,15 @@ momento1: "/assets/img/event-2.png"
     </div>
 </div>
 <script src="{{ site.baseurl }}/assets/js/event.js"></script>
-    
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+    $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: true, 
+        prevNextButtons: false,
+        pageDots: false,
+        autoPlay: true, 
+        wrapAround: true
+    });
+</script>
