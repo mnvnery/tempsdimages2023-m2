@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="ms-3 me-5em w-100">
+<div class="ms-3 me-5em w-100 ms-lg">
 {% include momento1.html %}
 {% assign sortedEvents = site.events | sort: 'start_date' | where: "dias", "26-5" %}
 {% for event in sortedEvents %}

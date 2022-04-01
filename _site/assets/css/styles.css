@@ -127,7 +127,7 @@ p { line-height: 1.4em; }
 
 .rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 2.3vh; }
 
-.agora-img { position: absolute; top: 8%; right: 33%; margin: auto; width: 22em; }
+.agora-img { position: absolute; top: 8%; right: 33%; margin: auto; width: 25vw; }
 
 .depois { width: 30em; margin-top: 20vh; }
 
@@ -152,5 +152,7 @@ p { line-height: 1.4em; }
 @media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 62vh; max-height: 62vh; overflow: scroll; } }
 
 @media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid #ff45c5; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } }
+
+@media only screen and (min-width: 2000px) { .momento-2-toggle { height: 95vh; top: 3.7em; padding-bottom: 6vh; padding-top: 3vh; } .momento-1-header { font-size: 1.4rem; top: 4em; padding: 2vh !important; } .me-5em { margin-right: 4vw; } .ps-lg { padding-left: 2vw !important; } .ms-lg { margin-left: 2vw !important; } .momento-1-header a:hover { border: 2px solid #ff45c5; } .day-active { border: 2px solid #ff45c5 !important; } h6 { font-size: 1.6rem; } body { font-size: 1.6rem; } .small-text { font-size: 1.1rem; } .navbar-container { padding-top: 2vh !important; padding-bottom: 1vh !important; } .pages-nav { font-size: 1.4rem; } .col-scroll, .arquivo-scroll { min-height: 86vh; max-height: 86vh; } .arquivo-scroll { align-items: center; } }
 
 /*# sourceMappingURL=styles.css.map */
