@@ -52,6 +52,8 @@ p { line-height: 1.4em; }
 
 .mobile { display: none !important; }
 
+.saturate { filter: saturate(0); }
+
 @media only screen and (max-width: 990px) { .mobile { display: block !important; } .mobile-flex { display: flex !important; } .desktop { display: none !important; } }
 
 .navbar-container { position: sticky; top: 0; left: 0; z-index: 6; width: 100%; transition: 0.2s; }
