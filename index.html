@@ -22,8 +22,8 @@ images:
         {% assign sortedEvents = site.events | sort: 'start_date' %}
         {% for event in sortedEvents %}
         <div class="event-container d-lg-flex border border-pink border-top-0 pb-3" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
-            <div class="p-relative w-lg-50 event-img mx-4">
-                <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100">
+            <div class="p-relative w-lg-50 event-img mx-4 pink-shadow">
+                <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="saturate w-100 event-img-target">
                 <div class="img-credits small-text">{{ event.credit_image }}</div>
                 <div class="ticket-btn red-shadow px-2 py-1">Bilhetes</div>
             </div>

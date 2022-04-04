@@ -4,6 +4,7 @@ $('.event-container').click(function() {
     $(this).find(".closed-event").toggle();
     $(this).find(".open-event").toggle();
     $(this).find(".img-credits").toggle();
+    $(this).find(".event-img-target").toggleClass("saturate");
 });
 $('.event-container').hover(function() {
     let days = $(this).data('days');
