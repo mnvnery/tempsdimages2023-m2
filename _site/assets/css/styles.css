@@ -141,7 +141,9 @@ p { line-height: 1.4em; }
 
 .rect-arrow { height: 33vh; width: 1px; background-color: #FF3844; margin-top: -3px; }
 
-@media only screen and (max-width: 990px) { .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 4em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 13vh !important; } }
+@media only screen and (max-width: 990px) { .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 6em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 13vh !important; } }
+
+@media only screen and (max-width: 500px) { .me-5em { margin-right: 4em; } }
 
 .overflow-scroll { overflow-y: scroll; }
 
