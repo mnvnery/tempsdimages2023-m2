@@ -49,4 +49,5 @@ fields:
     label: Info
   label: Momento I
 pages:
+- about.html
 - sobre.html
