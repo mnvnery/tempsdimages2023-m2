@@ -13,6 +13,11 @@ fields:
   config:
     required: false
   label: Crédito Imagem
+- name: link_bilhetes
+  type: text
+  config:
+    required: false
+  label: Link Bilhetes
 - name: title
   type: text
   config:
