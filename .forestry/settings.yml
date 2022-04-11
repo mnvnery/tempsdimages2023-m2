@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: document
+  path: contacts.html
+  label: Contacts
+  match: "**/*"
 - type: heading
   label: PT
 - type: document
@@ -36,7 +40,7 @@ sections:
   label: Events
   create: documents
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
   templates:
   - event
 upload_dir: assets/img
