@@ -4,8 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Debruçando-se sobre a relação entre as artes cénicas e a imagem em movimento,
   o TEMPS D’IMAGES é um festival multi-disciplinar que apresenta peças de teatro,
   performances, espectáculos, exposições e filmes em vários locais de Lisboa.
-baseurl: "/tempsdimages"  # the subpath of your site, e.g. /blog
-url: "https://mnvnery.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tempsdimages-portugal.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
