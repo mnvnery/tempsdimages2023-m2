@@ -81,9 +81,11 @@ p { line-height: 1.4em; }
 
 .mobile-nav { display: none; }
 
+.site-title { font-size: 2.7vw; }
+
 @media only screen and (min-width: 1024px) { .nav-flex { display: flex; } }
 
-@media only screen and (max-width: 1024px) { .desktop-nav { display: none !important; } .mobile-nav { display: block; } .pages-nav { position: absolute; top: 0; left: -90vw; background-color: white; box-shadow: 9px 10px 12px -2px #ff45c5; padding: 4em 2em 2em 1em; font-size: 1.5em; line-height: 1.8em; transition: 0.3s; } .pages-nav-open { left: 0; transition: 0.3s; display: block; } }
+@media only screen and (max-width: 1024px) { .site-title { font-size: 6.7vw; } .desktop-nav { display: none !important; } .mobile-nav { display: block; } .pages-nav { position: absolute; top: 0; left: -90vw; background-color: white; box-shadow: 9px 10px 12px -2px #ff45c5; padding: 4em 2em 2em 1em; font-size: 1.5em; line-height: 1.8em; transition: 0.3s; } .pages-nav-open { left: 0; transition: 0.3s; display: block; } }
 
 .momento-1-header { position: sticky; top: 4.7em; background-color: white; z-index: 5; }
 
@@ -131,6 +133,8 @@ p { line-height: 1.4em; }
 
 .momento-2-toggle { position: fixed; top: 11vh; bottom: 0; right: 0; background-color: white; z-index: 5; }
 
+.navbar-container { height: 11vh; }
+
 .rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 2.3vh; }
 
 .agora-img { position: absolute; top: 8%; right: 33%; margin: auto; width: 25vw; }
@@ -145,9 +149,9 @@ p { line-height: 1.4em; }
 
 .rect-arrow { height: 33vh; width: 1px; background-color: #FF3844; margin-top: -3px; }
 
-@media only screen and (min-width: 990px) and (max-width: 1024px) { .momento-2-toggle { top: 9vh; } }
+@media only screen and (min-width: 990px) and (max-width: 1024px) { .momento-2-toggle { top: 9vh; } .navbar-container { height: 9vh; justify-content: flex-start !important; } .site-title { font-size: 4.2vw; } }
 
-@media only screen and (max-width: 990px) { .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 5.8em; } .me-5em { margin-right: 6em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 13vh !important; } }
+@media only screen and (max-width: 990px) { .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } .me-5em { margin-right: 6em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 13vh !important; } }
 
 @media only screen and (max-width: 500px) { .me-5em { margin-right: 4em; } }
 
@@ -165,8 +169,8 @@ p { line-height: 1.4em; }
 
 @media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid #ff45c5; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } }
 
-@media only screen and (min-width: 1500px) { .momento-2-toggle { top: 9vh; } }
+@media only screen and (min-width: 1500px) { .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } }
 
-@media only screen and (min-width: 2000px) { .momento-2-toggle { top: 7vh; bottom: 0; padding-bottom: 4vh; padding-top: 3vh; } .rotate-90 { font-size: 1.6rem; } .momento-1-header { font-size: 1.4rem; top: 4em; padding: 2vh !important; } .ps-lg { padding-left: 2vw !important; } .ms-lg { margin-left: 2vw !important; } .momento-1-header a:hover { border: 2px solid #ff45c5; } .day-active { border: 2px solid #ff45c5 !important; } h6 { font-size: 1.6rem; } body { font-size: 1.6rem; } .small-text { font-size: 1.1rem; } .navbar-container { padding-top: 2vh !important; padding-bottom: 1vh !important; } .pages-nav { font-size: 1.4rem; } .col-scroll, .arquivo-scroll { min-height: 86vh; max-height: 86vh; } .arquivo-scroll { align-items: center; } .rect-arrow { height: 40vh; } }
+@media only screen and (min-width: 2000px) { .momento-2-toggle { top: 7vh; bottom: 0; padding-bottom: 4vh; padding-top: 3vh; } .navbar-container { height: 7vh; } .rotate-90 { font-size: 1.6rem; } .momento-1-header { font-size: 1.4rem; top: 4em; padding: 2vh !important; } .ps-lg { padding-left: 2vw !important; } .ms-lg { margin-left: 2vw !important; } .momento-1-header a:hover { border: 2px solid #ff45c5; } .day-active { border: 2px solid #ff45c5 !important; } h6 { font-size: 1.6rem; } body { font-size: 1.6rem; } .small-text { font-size: 1.1rem; } .navbar-container { padding-top: 2vh !important; padding-bottom: 1vh !important; } .pages-nav { font-size: 1.4rem; } .col-scroll, .arquivo-scroll { min-height: 86vh; max-height: 86vh; } .arquivo-scroll { align-items: center; } .rect-arrow { height: 40vh; } }
 
 /*# sourceMappingURL=styles.css.map */
