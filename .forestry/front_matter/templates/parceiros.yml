@@ -6,6 +6,24 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: producao
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Produção
 - name: financiamento
   type: field_group_list
   fields:
@@ -24,5 +42,41 @@ fields:
     max: 
     labelField: 
   label: Financiamento
+- name: apoio
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Apoio
+- name: parceiros_media
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Parceiros Media
 pages:
 - parceiros.html
