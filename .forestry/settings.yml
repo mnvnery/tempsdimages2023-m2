@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: PT
 - type: document
   path: parceiros.html
   label: Parceiros
@@ -21,10 +23,20 @@ sections:
   label: Home
 - type: directory
   path: _events
-  label: Events
+  label: Eventos
   create: documents
   match: "**/*"
   new_doc_ext: html
+  templates:
+  - event
+- type: heading
+  label: ENG
+- type: directory
+  path: _events_eng
+  label: Events
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".html"
   templates:
   - event
 upload_dir: assets/img
