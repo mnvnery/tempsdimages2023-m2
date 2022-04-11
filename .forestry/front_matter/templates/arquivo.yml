@@ -34,4 +34,5 @@ fields:
     labelField: year
   label: Edições
 pages:
+- archive.html
 - arquivo.html
