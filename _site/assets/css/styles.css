@@ -151,7 +151,7 @@ p { line-height: 1.4em; }
 
 @media only screen and (min-width: 990px) and (max-width: 1024px) { .momento-2-toggle { top: 9vh; } .navbar-container { height: 9vh; justify-content: flex-start !important; } .site-title { font-size: 4.2vw; } }
 
-@media only screen and (max-width: 990px) { .rect-arrow { height: 25vh; } .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } .me-5em { margin-right: 6em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 13vh !important; } }
+@media only screen and (max-width: 990px) { .rect-arrow { height: 25vh; } .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } .me-5em { margin-right: 6em; } .agora-img { top: 17%; right: 3%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 21em; margin-top: 25vh; } .pb-mobile { padding-bottom: 10vh !important; } }
 
 @media only screen and (max-width: 500px) { .me-5em { margin-right: 4em; } }
 
