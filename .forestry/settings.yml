@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: document
-  path: contacts.html
-  label: Contacts
-  match: "**/*"
 - type: heading
   label: PT
 - type: document
@@ -35,6 +31,18 @@ sections:
   - event
 - type: heading
   label: ENG
+- type: document
+  path: contacts.html
+  label: Contacts
+  match: "**/*"
+- type: document
+  path: about.html
+  label: About
+  match: "**/*"
+- type: document
+  path: archive.html
+  label: Archive
+  match: "**/*"
 - type: directory
   path: _events_eng
   label: Events
