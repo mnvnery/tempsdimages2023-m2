@@ -6,8 +6,9 @@ fields:
   name: layout
   label: layout
   hidden: true
-- type: file
-  name: momento1
-  label: Imagem Momento I
+- name: images
+  type: image_gallery
+  config: {}
+  label: Imagens
 pages:
 - index.html
