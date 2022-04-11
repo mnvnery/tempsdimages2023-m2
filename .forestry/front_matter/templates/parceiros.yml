@@ -7,16 +7,22 @@ fields:
   label: layout
   hidden: true
 - name: financiamento
-  type: image_gallery
-  config: {}
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Financiamento
-- name: apoio
-  type: image_gallery
-  config: {}
-  label: Apoio
-- name: parceiros_media
-  type: image_gallery
-  config: {}
-  label: Parceiros Media
 pages:
 - parceiros.html
