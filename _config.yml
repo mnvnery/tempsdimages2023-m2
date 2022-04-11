@@ -20,6 +20,8 @@ sass:
 collections:
   events: 
     output: true
+  events_eng: 
+    output: true
     
 
 
