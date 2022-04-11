@@ -9,6 +9,11 @@ fields:
 - name: producao
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Nome
   - name: link
     type: text
     config:
@@ -27,6 +32,11 @@ fields:
 - name: financiamento
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Nome
   - name: link
     type: text
     config:
@@ -45,6 +55,11 @@ fields:
 - name: apoio
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Nome
   - name: link
     type: text
     config:
@@ -63,6 +78,11 @@ fields:
 - name: parceiros_media
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Nome
   - name: link
     type: text
     config:
