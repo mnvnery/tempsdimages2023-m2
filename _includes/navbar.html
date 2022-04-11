@@ -1,4 +1,4 @@
-<div class="p-3 pb-0 mb-0 d-flex align-items-start align-items-xl-center justify-content-xl-between navbar-container ps-xl">
+<div class="p-3 pb-0 mb-0 d-flex align-items-start align-items-center justify-content-lg-between navbar-container ps-xl">
 <div class="mobile-nav me-4">
     <div id="close-icon">
         <span></span>
@@ -6,7 +6,7 @@
         <span></span>
     </div>
 </div>
-<h1><a href="{{site.baseurl}}/"><span class="font-mesclo spacing-lg">TEMPS D'IMAGES</span><br class="mobile-nav"><span class="ps-xl-5">20 anos</span></a></h1>
+<h1 class="site-title"><a href="{{site.baseurl}}/"><span class="font-mesclo spacing-lg">TEMPS D'IMAGES</span><br class="mobile-nav"><span class="ps-xl-5">20 anos</span></a></h1>
 <div class="pages-nav nav-flex font-attila">
     {% for nav in site.data.navigation %}
         <div {% if nav.url == page.url %} class="nav-active text-center"{% endif %}><a href="{{ site.baseurl}}{{ nav.url }}" class="mx-3">{{ nav.text }}</a></div>

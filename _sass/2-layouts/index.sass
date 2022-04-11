@@ -18,6 +18,9 @@
     background-color: white
     z-index: 5
 
+.navbar-container
+    height: 11vh
+
 .rotate-90
     writing-mode: tb-rl
     transform: rotate(-180deg)
@@ -55,6 +58,13 @@
 @media only screen and (min-width: 990px) and (max-width: 1024px)
     .momento-2-toggle
         top: 9vh
+
+    .navbar-container
+        height: 9vh
+        justify-content: flex-start !important
+
+    .site-title
+        font-size: 4.2vw
 @media only screen and (max-width: 990px) 
     .carousel-cell
         height: 62vh
@@ -63,7 +73,10 @@
         height: 62vh
 
     .momento-2-toggle
-        top: 5.8em
+        top: 11vh
+
+    .navbar-container
+        height: 11vh
 
     .me-5em
         margin-right: 6em
