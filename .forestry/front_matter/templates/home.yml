@@ -11,4 +11,4 @@ fields:
   config: {}
   label: Imagens
 pages:
-- index.html
+- _data/home-slideshow.yml
