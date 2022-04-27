@@ -12,7 +12,7 @@ images:
     <div class="d-flex flex-column w-100">
         <div class="hero-container pink-shadow mb-3 mt-1">
             <div class="main-carousel hero-img">
-                {% for img in page.images %}
+                {% for img in site.data.home-slideshow %}
                     <div class="carousel-cell"><img src="{{ site.baseurl }}{{ img }}" alt=""></div>
                 {% endfor %}
             </div>

@@ -1,0 +1,103 @@
+---
+layout: eng
+---
+<div class="ms-3 me-5em w-100 ms-lg">
+
+    <div class='d-flex momento-1-header p-3 justify-content-between border border-pink pink'>
+        <a href="{{ site.baseurl }}/program" class="font-attila">Moment I</a>
+        <div>
+            <svg width="161" height="8" viewBox="0 0 161 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M160.354 4.35357C160.549 4.15831 160.549 3.84172 160.354 3.64646L157.172 0.46448C156.976 0.269218 156.66 0.269218 156.464 0.46448C156.269 0.659742 156.269 0.976324 156.464 1.17159L159.293 4.00001L156.464 6.82844C156.269 7.0237 156.269 7.34029 156.464 7.53555C156.66 7.73081 156.976 7.73081 157.172 7.53555L160.354 4.35357ZM-4.37114e-08 4.5L160 4.50001L160 3.50001L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#FF45C5"/>
+            </svg>
+        </div>
+        <div>MAY</div>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-5">5</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-6">6</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-7">7</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-8">8</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-9">9</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-10">10</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-11">11</a>
+        <a href="{{ site.baseurl }}/program/5-12"  id="day-12">12</a>
+        <a href="{{ site.baseurl }}/program/19-22" id="day-19">19</a>
+        <a href="{{ site.baseurl }}/program/19-22" id="day-20">20</a>
+        <a href="{{ site.baseurl }}/program/19-22" id="day-21">21</a>
+        <a href="{{ site.baseurl }}/program/19-22" id="day-22">22</a>
+        <a href="{{ site.baseurl }}/program/26" id="day-26">26</a>
+        <a href="{{ site.baseurl }}/program/27" id="day-27">27</a>
+        <a href="{{ site.baseurl }}/program/28" id="day-28">28</a>
+        <div>
+            <svg width="63" height="24" viewBox="0 0 63 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M55.3536 12.3536C55.5488 12.1583 55.5488 11.8417 55.3536 11.6465L52.1716 8.46447C51.9763 8.26921 51.6597 8.26921 51.4645 8.46447C51.2692 8.65973 51.2692 8.97631 51.4645 9.17158L54.2929 12L51.4645 14.8284C51.2692 15.0237 51.2692 15.3403 51.4645 15.5355C51.6597 15.7308 51.9763 15.7308 52.1716 15.5355L55.3536 12.3536ZM7 12.5L55 12.5L55 11.5L7 11.5L7 12.5Z" fill="#FF45C5"/>
+            </svg>            
+        </div>
+        <div>JUN</div>
+        <a href="{{ site.baseurl }}/program/3-5" id="day-3">3</a>
+        <a href="{{ site.baseurl }}/program/3-5" id="day-4">4</a>
+        <a href="{{ site.baseurl }}/program/3-5" id="day-5">5</a>
+        <div id="day-16" class="day-active">16 — 19</div>
+    </div>
+
+
+{% assign sortedEvents = site.events_eng | sort: 'start_date' | where: "dias", "16-6" %}
+{% for event in sortedEvents %}
+    <div class="event-container d-flex border border-pink border-top-0 pb-3">
+        <div class="p-relative w-50 event-img mx-4">
+            <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100">
+            <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">Tickets soon</a></div>
+        </div>
+        <div class="open-event w-50">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                <h6><b>{{ event.title }}</b></h6>
+                <h6>{{ event.artist }}</h6>
+                <br>
+                <ul>
+                    <li>{{ event.dates }}</li>
+                    <li>{{ event.other_date }}</li>
+                    <li>{{ event.venue }}</li>
+                </ul>
+                <h2 class="red text-center py-5"><i class="event-btn ri-add-line"></i></h2>
+            </div>
+        </div>
+        <div class="closed-event">
+            <div class="d-flex justify-content-space-between mx-6">
+                <div class="event-details d-flex flex-column justify-content-center align-items-center text-center w-50 ps-5 pe-10">
+                    <div>
+                        <h6><b>{{ event.title }}</b></h6>
+                        <h6>{{ event.artist }}</h6>
+                        <br>
+                        <ul>
+                            <li>{{ event.dates }}</li>
+                            <li>{{ event.other_date }}</li>
+                            <li>{{ event.venue }}</li>
+                            <li>{{ event.duracao }}</li>
+                            <li>{{ event.age }}</li>
+                        </ul>
+                    </div>
+                    <div class="small-text text-start pt-3">{{ event.tech }}</div>
+                </div>
+                <div class="w-50 font-archer px-5">{{ event.synopsis}}</div>
+                </div>
+                <div class="p-relative mt-4">
+                    <div class="border-top border-pink"></div>
+                    <h6 class="bio-titulo">Biographies</h6>
+                </div>
+                <div class="row mx-6 mt-5">
+                    {% for bio in event.bios %}
+                        <div class="font-archer col-12 col-md-6 px-5 pb-3">{{ bio.bio }}</div>
+                    {% endfor %}
+                </div>
+            <h2 class="red text-center py-5"><i class="event-btn ri-close-line"></i></h2>
+        </div>
+    </div>
+{% endfor %}  
+<div class="text-center pink mt-2 w-100"><a href="{{ site.baseurl }}/program">Full Program</a></div>
+</div>
+<script>
+$('.event-container').click(function() {
+    $(this).toggleClass("d-block");
+    $(this).find('.event-img').toggleClass("event-full");
+    $(this).find(".closed-event").toggle();
+    $(this).find(".open-event").toggle();
+});
+</script>

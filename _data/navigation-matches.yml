@@ -1,0 +1,12 @@
+- pt-version: /
+  eng-version: /index-eng/
+- pt-version: /sobre/
+  eng-version: /about/
+- pt-version: /programacao/
+  eng-version: /program/
+- pt-version: /parceiros/
+  eng-version: /partners/
+- pt-version: /contactos/
+  eng-version: /contacts/
+- pt-version: /arquivo/
+  eng-version: /archive/
