@@ -1,22 +1,83 @@
 ---
-layout: default
-producao:
-- "/assets/img/logotipo-hs.jpg"
-- "/assets/img/duplacena_h_rgb_black.png"
+layout: eng
 financiamento:
-- "/assets/img/03-logotipo-cml_vertical_preto.jpg"
-- "/assets/img/02-dgartes-horizontal-preto.jpg"
-- "/assets/img/01-min-cultura-horizontal-preto.jpg"
+- name: Ministério Cultura
+  link: ''
+  logo: "/assets/img/01-min-cultura-horizontal-preto.jpg"
+- name: DG Artes
+  link: ''
+  logo: "/assets/img/02-dgartes-horizontal-preto.jpg"
+- name: Câmara Lisboa
+  link: ''
+  logo: "/assets/img/03-logotipo-cml_vertical_preto.jpg"
+producao:
+- link: ''
+  logo: "/assets/img/duplacena_h_rgb_black.png"
+  name: Dupla Cena
+- link: ''
+  logo: "/assets/img/logotipo-hs.jpg"
+  name: Horta Seca
 apoio:
-- "/assets/img/tba_extenso_preto.png"
-- "/assets/img/marca_ccb_b-w.png"
-- "/assets/img/logomeridional_2017_preto-horizontal.jpg"
-- "/assets/img/cal-_-preto.jpg"
-- "/assets/img/appleton2_b-w.png"
+- name: Appleton
+  link: ''
+  logo: "/assets/img/appleton2_b-w.png"
+- name: CCB
+  link: ''
+  logo: "/assets/img/marca_ccb_b-w.png"
+- name: Meridonal
+  link: ''
+  logo: "/assets/img/logomeridional_2017_preto-horizontal.jpg"
+- name: Primeiros Sintomas
+  link: ''
+  logo: "/assets/img/cal-_-preto.jpg"
+- name: TBA
+  link: ''
+  logo: "/assets/img/tba_extenso_preto.png"
 parceiros_media:
-- "/assets/img/logo_acl-01.png"
-- "/assets/img/coffeepaste_light.png"
-- "/assets/img/antena3_positivo_horiz_b-w.png"
-- "/assets/img/antena2_positivo_horiz_b-w.png"
-- "/assets/img/antena1_positivo_horiz_b-w.png"
+- name: Antena 1
+  link: ''
+  logo: "/assets/img/antena1_positivo_horiz_b-w.png"
+- name: Antena 2
+  link: ''
+  logo: "/assets/img/antena2_positivo_horiz_b-w.png"
+- name: Antena 3
+  link: ''
+  logo: "/assets/img/antena3_positivo_horiz_b-w.png"
+- name: Coffee Paste
+  link: ''
+  logo: "/assets/img/coffeepaste_light.png"
+- name: Agenda Cultural
+  link: ''
+  logo: "/assets/img/logo_acl-01.png"
 ---
+<div class="ms-3 me-5em w-100">
+    <div class="border border-pink border-bottom-0 col-scroll text-center p-3 pt-5 overflow-scroll">
+        <div>
+            <h5>Production</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for item in page.producao %}
+                    <a href="{{ item.link }}"><img src="{{ site.baseurl}}{{ item.logo }}" alt="logo financiamento" class="logo-parceiros"></a>
+                {% endfor %}
+            </div>
+            <h5>Financing</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for item in page.financiamento %}
+                    <a href="{{ item.link }}"><img src="{{ site.baseurl}}{{ item.logo }}" alt="logo financiamento" class="logo-parceiros"></a>
+                {% endfor %}
+            </div>
+            <h5>Support</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for item in page.apoio %}
+                    <a href="{{ item.link }}"><img src="{{ site.baseurl}}{{ item.logo }}" alt="logo apoio" class="logo-parceiros"></a>
+                {% endfor %}
+            </div>
+            <h5>Media Partners</h5>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+                {% for item in page.parceiros_media %}
+                    <a href="{{ item.link }}"><img src="{{ site.baseurl}}{{ item.logo }}" alt="logo parceitos_media" class="logo-parceiros"></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% include moment1.html %}
+</div>
