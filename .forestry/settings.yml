@@ -19,7 +19,7 @@ sections:
   path: arquivo.html
   label: Arquivo
 - type: document
-  path: index.html
+  path: _data/home-slideshow.yml
   label: Home
 - type: directory
   path: _events
