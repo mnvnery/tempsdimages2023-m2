@@ -25,7 +25,7 @@ images:
             <div class="p-relative w-lg-50 event-img mx-4 pink-shadow">
                 <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="saturate w-100 event-img-target">
                 <div class="img-credits small-text">{{ event.credit_image }}</div>
-                <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">Bilhetes em breve</a></div>
+                <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">{% if event.link_bilhetes == 'entrada livre' %} Entrada Livre {% else %} <u>Bilhetes</u> {% endif %}</a></div>
             </div>
             <div class="open-event w-lg-50">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center px-4">
