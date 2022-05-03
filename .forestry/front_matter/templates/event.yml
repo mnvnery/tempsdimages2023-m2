@@ -17,7 +17,7 @@ fields:
   type: text
   config:
     required: false
-  label: Link Bilhetes
+  label: Link <u>Bilhetes</u>
 - name: title
   type: text
   config:
