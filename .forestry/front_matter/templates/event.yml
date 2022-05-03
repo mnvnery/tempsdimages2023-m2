@@ -115,6 +115,10 @@ fields:
     max: 
     labelField: 
   label: Biografias
+- name: parceiros
+  type: image_gallery
+  config: {}
+  label: Parceiros
 pages:
 - _events/anima.html
 - _events/ciclone.html
