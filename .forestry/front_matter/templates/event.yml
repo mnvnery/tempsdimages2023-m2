@@ -120,6 +120,7 @@ fields:
   config: {}
   label: Parceiros
 pages:
+- _events/cortejo.html
 - _events/la-burla.html
 - _events/quem-tem-medo-das-emocoes.html
 - _events/specie.html
