@@ -119,8 +119,3 @@ fields:
   type: image_gallery
   config: {}
   label: Parceiros
-pages:
-- _events/anima.html
-- _events/ciclone.html
-- _events/de-gelo-diamante-em-bruto.html
-- _events/documentario.html
