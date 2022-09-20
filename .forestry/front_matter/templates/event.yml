@@ -41,7 +41,7 @@ fields:
   type: tag_list
   default: []
   description: 'Adicionar os dias em que o evento ocorre. Dia/Mês como elementos separados.
-    ex: 12/5, 13/5, 14/5. Para que se possa filtrar por dia.'
+    ex: 12-5, 13-5, 14-5. Para que se possa filtrar por dia.'
   label: Dias
 - name: dates
   type: text
