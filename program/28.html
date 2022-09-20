@@ -5,9 +5,9 @@ layout: eng
 {% include moment1.html %}
 {% assign sortedEvents = site.events_eng | sort: 'start_date' | where: "dias", "28-5" %}
 {% for event in sortedEvents %}
-    <div class="event-container d-flex border border-pink border-top-0 pb-3">
+    <div class="event-container d-flex border border-red border-top-0 pb-3">
         <div class="p-relative w-50 event-img mx-4">
-            <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="pink-shadow w-100">
+            <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="red-shadow w-100">
             <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">{% if event.link_bilhetes == 'free entrance' %} Free Entry {% else %} <u>Tickets</u> {% endif %}</a></div>
         </div>
         <div class="open-event w-50">
@@ -43,7 +43,7 @@ layout: eng
                 <div class="w-50 font-archer px-5">{{ event.synopsis}}</div>
                 </div>
                 <div class="p-relative mt-4">
-                    <div class="border-top border-pink"></div>
+                    <div class="border-top border-red"></div>
                     <h6 class="bio-titulo">Biographies</h6>
                 </div>
                 <div class="row mx-6 mt-5">
@@ -55,7 +55,7 @@ layout: eng
         </div>
     </div>
 {% endfor %} 
-<div class="text-center pink mt-2 w-100"><a href="{{ site.baseurl }}/program">Full Program</a></div>
+<div class="text-center red mt-2 w-100"><a href="{{ site.baseurl }}/program">Full Program</a></div>
 </div>
 <script>
 $('.event-container').click(function() {
