@@ -120,9 +120,13 @@ fields:
   config: {}
   label: Parceiros
 pages:
-- _events/anima.html
-- _events/ciclone.html
-- _events/de-gelo-diamante-em-bruto.html
-- _events/documentario.html
-- _events/mas-onde-esta-a-espada.html
-- _events/para-acabar-com-o-julgamento-de-deus.html
+- _events/cortejo.html
+- _events/la-burla.html
+- _events/lebre.html
+- _events/miopia.html
+- _events/quem-tem-medo-das-emocoes.html
+- _events/se-te-portares-bem-vamos-ao-mcdonald-s.html
+- _events/specie.html
+- _events/sufocada-em-lagrimas.html
+- _events/tratado-da-invencao-das-coisas-copy.html
+- _events/tratado-da-invencao-das-coisas.html
