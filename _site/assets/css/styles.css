@@ -165,7 +165,7 @@ p { line-height: 1.4em; }
 
 .sobre-s-left { border-bottom: 1px solid #FF3844; }
 
-@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 62vh; max-height: 62vh; overflow: scroll; } }
+@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 62vh; max-height: 62vh; overflow: scroll; } .logo-parceiros { margin-bottom: 1em; } }
 
 @media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid #FF3844; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } .edition-container { width: 20%; height: 145px !important; display: flex; align-items: center; justify-content: center; } }
 
