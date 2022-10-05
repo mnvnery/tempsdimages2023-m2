@@ -19,7 +19,7 @@ fields:
     required: false
   label: Link Bilhetes
   description: 'Adicionar o link aqui. Caso a entrada seja livre, escrever apenas:
-    entrada livre.'
+    entrada livre. Para ''bilhetes em breve'': deixar em branco.'
 - name: title
   type: text
   config:
