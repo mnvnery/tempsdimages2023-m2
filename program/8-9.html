@@ -38,7 +38,7 @@ layout: default
     <div class="event-container d-flex border border-red border-top-0 pb-3">
         <div class="p-relative w-50 event-img mx-4 red-shadow">
             <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="saturate w-100 event-img-target">
-            <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">{% if event.link_bilhetes == 'entrada livre' %} Entrada Livre {% else %} <u>Bilhetes</u> {% endif %}</a></div>
+            <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ event.link_bilhetes }}" target="_blank">{% if event.link_bilhetes == 'Free entry' %} Entrada Livre {% else %} <u>Bilhetes</u> {% endif %}</a></div>
         </div>
         <div class="open-event w-50">
             <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center">
