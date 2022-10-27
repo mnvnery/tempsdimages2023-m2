@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="ms-3 me-5em w-100 ms-lg">
+    {% include momento1.html %}
+<div class="d-flex">
+    <div class="event-container d-block d-lg-flex border border-red border-top-0 pb-3 mb-5" data-days='{% for dia in page.dias %}{{ dia }},{% endfor %}'>
+        <div class="p-relative w-lg-50 event-img event-full mx-4 red-shadow">
+            <img src="{{site.baseurl}}{{page.image}}" alt="Event Image" class="w-100 event-img-target">
+            <div class="img-credits d-block small-text">{{ page.credit_image }}</div>
+            <div class="ticket-btn red-shadow px-2 py-1"><a href="{{ page.link_bilhetes }}" target="_blank">{% if page.link_bilhetes == 'entrada livre' %} Entrada Livre {% else %} <u>Bilhetes</u> {% endif %}</a></div>
+        </div>
+        <div class="open-event d-none w-lg-50">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center px-4">
+                <h6><b>{{ page.title }}</b></h6>
+                <h6>{{ page.artist }}</h6>
+                <br>
+                <ul>
+                    <li>{{ page.dates }}</li>
+                    <li>{{ page.other_date }}</li>
+                    <li>{{ page.venue }}</li>
+                </ul>
+                <h2 class="red text-center py-1 py-lg-5"><i class="event-btn ri-add-line"></i></h2>
+            </div>
+        </div>
+        <div class="closed-event d-block">
+            <div class="d-lg-flex justify-content-space-between mx-6">
+                <div class="event-details d-lg-flex flex-column justify-content-center align-items-center text-center w-lg-50 ps-lg-5 pe-10 px-4">
+                    <div>
+                        <h6><b>{{ page.title }}</b></h6>
+                        <h6>{{ page.artist }}</h6>
+                        <br>
+                        <ul>
+                            <li>{{ page.dates }}</li>
+                            <li>{{ page.other_date }}</li>
+                            <li>{{ page.venue }}</li>
+                            <li>{{ page.duracao }}</li>
+                            <li>{{ page.age }}</li>
+                        </ul>
+                    </div>
+                    <div class="small-text text-start pt-3">{{ page.tech }}</div>
+                </div>
+                <div class="w-lg-50 font-archer px-lg-5 px-4 pt-lg-0 pt-3">{{ page.synopsis}}</div>
+                </div>
+                <div class="p-relative mt-4">
+                    <div class="border-top border-red"></div>
+                    <h6 class="bio-titulo">Biografias</h6>
+                </div>
+                <div class="row mx-6 mt-5 px-4">
+                    {% for bio in page.bios %}
+                        <div class="font-archer col-12 col-md-6 px-lg-5 pb-3">{{ bio.bio }}</div>
+                    {% endfor %}
+                </div>
+                <h2 class="red text-center py-1 py-lg-5"><a href="{{site.baseurl}}/programacao"><i class="event-btn ri-close-line"></i></a></h2>
+        </div>
+    </div>
+</div>
+</div>
+<script src="{{ site.baseurl }}/assets/js/event.js"></script>
