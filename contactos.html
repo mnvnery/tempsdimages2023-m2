@@ -31,7 +31,8 @@ financiamento:
 
 ---
 <div class="ms-3 w-100 me-5em ms-lg">
-    <div class="d-flex flex-column flex-lg-row border border-bottom-0 border-red">
+  {% include momento1.html%}
+    <div class="d-flex flex-column flex-lg-row border border-bottom-0 border-red col-scroll">
         <div class="p-4 p-lg-5 pb-lg-5 pb-3 text-center sobre-section sobre-s-left w-lg-50">
             {% for c in page.contactos reversed %}
             <div class="contact-card">
@@ -45,10 +46,9 @@ financiamento:
         <div class="p-4 p-lg-5 sobre-section sobre-s-right w-lg-50 text-center">
             <h6>Produção</h6>
             {% for logo in page.producao %}
-            <img src="{{site.baseurl}}{{ logo }}" alt="logo Produção" class="logo-parceiros">
+            <img src="{{site.baseurl}}{{ logo }}" alt="logo Produção" class="logo-parceiros multiply">
             {% endfor %}
             <div class="pb-5"></div>
         </div>
     </div>
-    {% include momento1.html%}
 </div>

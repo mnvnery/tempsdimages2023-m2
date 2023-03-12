@@ -60,6 +60,8 @@ p { line-height: 1.4em; }
 
 .saturate { filter: saturate(0); }
 
+.multiply { mix-blend-mode: multiply; }
+
 @media only screen and (max-width: 990px) { .mobile { display: block !important; } .mobile-flex { display: flex !important; } .desktop { display: none !important; } }
 
 .navbar-container { position: sticky; top: 0; left: 0; z-index: 6; width: 100%; transition: 0.2s; }
@@ -69,7 +71,7 @@ p { line-height: 1.4em; }
 .nav-shadow { box-shadow: 0px 4px 10px -4px black; transition: 0.2s; background-color: #F3F3F3; }
 
 /* HAMBURGER NAV */
-#close-icon { width: 50px; height: 38px; position: relative; margin: 10px; margin-left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; margin-bottom: 1.8em; z-index: 10; }
+#close-icon { width: 50px; height: 38px; position: relative; margin: 10px; margin-left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; margin-bottom: 1em; z-index: 10; }
 
 #close-icon span { display: block; position: absolute; height: 2px; width: 100%; background: black; border-radius: 0; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out; }
 
@@ -91,9 +93,9 @@ p { line-height: 1.4em; }
 
 @media only screen and (min-width: 1024px) { .nav-flex { display: flex; } }
 
-@media only screen and (max-width: 1024px) { .site-title { font-size: 6.7vw; } .desktop-nav { display: none !important; } .mobile-nav { display: block; } .pages-nav { position: absolute; top: 0; left: -90vw; background-color: #F3F3F3; box-shadow: 9px 10px 12px -2px #ff45c5; padding: 4em 2em 2em 1em; font-size: 1.5em; line-height: 1.8em; transition: 0.3s; } .pages-nav-open { left: 0; transition: 0.3s; display: block; } }
+@media only screen and (max-width: 1024px) { .site-title { font-size: 6.7vw; } .desktop-nav { display: none !important; } .mobile-nav { display: block; } .pages-nav { position: absolute; top: 0; left: -90vw; background-color: #F3F3F3; box-shadow: 9px 10px 12px -2px rgba(0, 0, 0, 0.25); padding: 4em 2em 2em 1em; font-size: 1.5em; line-height: 1.8em; transition: 0.3s; } .pages-nav-open { left: 0; transition: 0.3s; display: block; } }
 
-.momento-1-header { position: sticky; top: 4.7em; background-color: #f3f3f3; z-index: 5; }
+.momento-1-header { position: sticky; top: 11vh; background-color: black; color: #F3F3F3; z-index: 5; }
 
 .event-img { margin-top: -10px; margin-bottom: 2em; transition: 0.3s; }
 
@@ -145,7 +147,9 @@ p { line-height: 1.4em; }
 
 .agora-img { position: absolute; bottom: 8%; right: 30%; margin: auto; width: 40vw; }
 
-.depois { width: 22em; margin-top: 15vh; margin-right: 5em; margin-left: 5em; }
+.depois { width: 35em; margin-top: 8vh; margin-right: -5em; margin-left: 1em; }
+
+.momento-gaveta { position: absolute; font-size: 2em; bottom: 20vh; text-align: center; width: 100%; }
 
 .depois-container { display: none; transition: 0.2s; }
 
@@ -157,7 +161,7 @@ p { line-height: 1.4em; }
 
 @media only screen and (min-width: 990px) and (max-width: 1024px) { .momento-2-toggle { top: 9vh; } .navbar-container { height: 9vh; justify-content: flex-start !important; } .site-title { font-size: 4.2vw; } }
 
-@media only screen and (max-width: 990px) { .rect-arrow { height: 25vh; } .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } .me-5em { margin-right: 6em; } .agora-img { top: 20%; right: 8%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 17em; margin-top: 25vh; margin-right: 2em; margin-left: 2em; } .pb-mobile { padding-bottom: 10vh !important; } }
+@media only screen and (max-width: 990px) { .rect-arrow { height: 25vh; } .carousel-cell { height: 62vh; } .carousel-cell img { height: 62vh; } .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } .me-5em { margin-right: 6em; } .agora-img { top: 20%; right: 8%; width: 18em; } .hero-img { height: 62vh; } .momento-1-header { font-size: 2.5vh; top: 4.4em; } .depois { width: 24em; margin-top: 16vh; margin-right: -4em; margin-left: 1em; } .pb-mobile { padding-bottom: 10vh !important; } }
 
 @media only screen and (max-width: 500px) { .me-5em { margin-right: 4em; } }
 
@@ -171,9 +175,9 @@ p { line-height: 1.4em; }
 
 .sobre-s-left { border-bottom: 1px solid black; }
 
-@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 62vh; max-height: 62vh; overflow: scroll; } .logo-parceiros { margin-bottom: 1em; } }
+@media only screen and (max-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 78vh; max-height: 78vh; overflow: scroll; } .logo-parceiros { margin-bottom: 1em; } }
 
-@media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 79vh; max-height: 79vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid black; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } .edition-container { width: 20%; height: 145px !important; display: flex; align-items: center; justify-content: center; } }
+@media only screen and (min-width: 990px) { .col-scroll, .arquivo-scroll { min-height: 80vh; max-height: 80vh; } .sobre-section, .arquivo-scroll { overflow: scroll; } .sobre-s-left { border-right: 1px solid black; border-bottom: 0; } .festival { width: 58%; } .info-momento { width: 75%; } .edition-container { width: 20%; height: 145px !important; display: flex; align-items: center; justify-content: center; } }
 
 @media only screen and (min-width: 1500px) { .momento-2-toggle { top: 11vh; } .navbar-container { height: 11vh; } }
 

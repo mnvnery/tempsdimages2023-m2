@@ -5,18 +5,17 @@ images:
 ---
 <div class="hero-section ps-3 ps-lg me-5em margin-lg">
     <div class="d-flex flex-column w-100">
-        <div class="hero-container red-shadow mb-3 mt-1">
+        {% include momento1.html %}
+        <div class="hero-container red-shadow mb-3">
             <div class="main-carousel hero-img">
                 {% for img in site.data.home-slideshow %}
-                    <img src="{{ site.baseurl }}{{ img }}" alt=""></div>
+                    <div class="carousel-cell"><img src="{{ site.baseurl }}{{ img }}" alt=""></div>
                 {% endfor %}
             </div>
-            <img src="{{ site.baseurl }}/assets/img/edepois_main.svg" alt="Titulo" class="agora-img">
         </div>
-        {% include momento1.html %}
         {% assign sortedEvents = site.events | sort: 'start_date' %}
         {% for event in sortedEvents %}
-        <div class="event-container d-lg-flex border border-red border-top-0 pb-3" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
+        <div class="event-container d-lg-flex border border-red pb-3 mt-2" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
             <div class="p-relative w-lg-50 event-img mx-4 red-shadow">
                 <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="saturate w-100 event-img-target">
                 <div class="img-credits small-text">{{ event.credit_image }}</div>
