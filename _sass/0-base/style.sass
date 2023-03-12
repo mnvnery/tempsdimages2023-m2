@@ -1,5 +1,5 @@
-$pink: #ff45c5
-$red: #FF3844
+$pink: black
+$red: black
 $modal-backdrop-bg: white
 
 @font-face 
@@ -26,17 +26,27 @@ $modal-backdrop-bg: white
     src: url("../fonts/Archer-Medium-Pro.otf")
     font-weight: bold
 
+
+@font-face 
+    font-family: "Suisse Intl"
+    src: url("../fonts/SuisseIntl-Book.otf")
+
+@font-face 
+    font-family: "Redaction"
+    src: url("../fonts/Redaction50-Regular.ttf")
+
 body
-    font-family: "Mesclo"
+    font-family: "Suisse Intl"
+    background-color: #f3f3f3
 
 h1, h2, h3, h4, h5, h6
-    font-family: "AttilaSansUniform"
+    font-family: "Redaction"
 
 .font-attila
-    font-family: "AttilaSansUniform"
+    font-family: "Redaction"
 
 .font-mesclo
-    font-family: "Mesclo"
+    font-family: "Suisse Intl"
 
 .font-archer
     font-family: "Archer Pro"
@@ -77,6 +87,9 @@ a:hover
 .hero-section
     min-width: 0
     width: 100vw
+
+.bg-black
+    background: black
 
 ul
     list-style: none
