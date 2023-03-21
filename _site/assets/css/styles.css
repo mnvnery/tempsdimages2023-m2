@@ -12,7 +12,7 @@
 
 @font-face { font-family: "Redaction"; src: url("../fonts/Redaction50-Regular.ttf"); }
 
-body { font-family: "Suisse Intl"; background-color: #f3f3f3; }
+body { font-family: "Suisse Intl"; background-color: #f3f3f3; letter-spacing: 0.03rem; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Redaction"; }
 
@@ -61,6 +61,12 @@ p { line-height: 1.4em; }
 .saturate { filter: saturate(0); }
 
 .multiply { mix-blend-mode: multiply; }
+
+.kerning { letter-spacing: 0.1rem; }
+
+.toggle-bg { background-color: black !important; color: white !important; }
+
+.z-2 { z-index: 2; }
 
 @media only screen and (max-width: 990px) { .mobile { display: block !important; } .mobile-flex { display: flex !important; } .desktop { display: none !important; } }
 
@@ -123,7 +129,7 @@ p { line-height: 1.4em; }
 
 .momento-1-header a { border: 1px solid black; border-radius: 50%; padding: 0 8px; }
 
-.momento-1-header a:hover { border: 1px solid white; border-radius: 50%; padding: 0 8px; }
+.momento-1-header a:hover { border: 1px solid white; border-radius: 50%; padding: 0 8px; color: white; }
 
 .ver-prog:hover { filter: drop-shadow(-1px 2px 2px rgba(255, 69, 197, 0.4)); transition: 0.2s; }
 
@@ -158,6 +164,8 @@ p { line-height: 1.4em; }
 .carousel-cell img { width: 100%; height: 77vh; object-fit: cover; }
 
 .rect-arrow { height: 33vh; width: 1px; background-color: black; margin-top: -3px; }
+
+.wider-arrow { width: 65vw; height: 1px; background-color: white; margin-right: -3px; }
 
 @media only screen and (min-width: 990px) and (max-width: 1024px) { .momento-2-toggle { top: 9vh; } .navbar-container { height: 9vh; justify-content: flex-start !important; } .site-title { font-size: 4.2vw; } }
 

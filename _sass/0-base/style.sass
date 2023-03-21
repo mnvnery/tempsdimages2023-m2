@@ -38,6 +38,7 @@ $modal-backdrop-bg: white
 body
     font-family: "Suisse Intl"
     background-color: #f3f3f3
+    letter-spacing: 0.03rem
 
 h1, h2, h3, h4, h5, h6
     font-family: "Redaction"
@@ -114,7 +115,17 @@ p
     filter: saturate(0)
 
 .multiply
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply
+
+.kerning
+    letter-spacing: 0.1rem
+
+.toggle-bg
+    background-color: black !important
+    color: white !important
+
+.z-2
+    z-index: 2;
 
 @media only screen and (max-width: 990px) 
     .mobile
