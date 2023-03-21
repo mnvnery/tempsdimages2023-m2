@@ -10,7 +10,6 @@ $(window).scroll(function() {
 
 $('.momento-2-toggle').click(function() {  
     $('.depois-container').toggle();
-   //  $('.momento-2-toggle').toggleClass('toggle-bg');
 });
 
 $(document).ready(function(){
