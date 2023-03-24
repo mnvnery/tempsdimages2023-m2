@@ -8,9 +8,9 @@ images:
         {% include momento1.html %}
         <div class="hero-container red-shadow mb-3">
             <div class="main-carousel hero-img">
-                {% for img in site.data.home-slideshow %}
-                    <div class="carousel-cell"><img src="{{ site.baseurl }}{{ img }}" alt=""></div>
-                {% endfor %}
+                        <video autoplay muted loop style="width: 100%" class="hero-img">
+                            <source src="{{ site.baseurl }}/assets/img/tdi_web.mp4" type="video/mp4">
+                        </video>
             </div>
         </div>
         {% assign sortedEvents = site.events | sort: 'start_date' %}
@@ -70,14 +70,3 @@ images:
 </div>
 <script src="{{ site.baseurl }}/assets/js/event.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-<script>
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true, 
-        prevNextButtons: false,
-        pageDots: false,
-        autoPlay: true, 
-        wrapAround: true
-    });
-</script>
