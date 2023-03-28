@@ -13,12 +13,12 @@ images:
         {% include moment1.html %}
         <div class="hero-container red-shadow mb-3">
             <div class="main-carousel hero-img">
-                {% for img in site.data.home-slideshow %}
-                    <div class="carousel-cell"><img src="{{ site.baseurl }}{{ img }}" alt=""></div>
-                {% endfor %}
+                        <video autoplay muted loop style="width: 100%" class="hero-img">
+                            <source src="{{ site.baseurl }}/assets/img/tdi_web.mp4" type="video/mp4">
+                        </video>
             </div>
-            <img src="{{ site.baseurl }}/assets/img/edepois_main.svg" alt="Titulo" class="agora-img">
         </div>
+        <!--
         {% assign sortedEvents = site.events_eng | sort: 'start_date' %}
         {% for event in sortedEvents %}
         <div class="event-container d-lg-flex border border-red pb-3 mt-2" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
@@ -71,19 +71,10 @@ images:
                 <h2 class="red text-center py-1 py-lg-5"><i class="event-btn ri-close-line"></i></h2>
             </div>
         </div>
-    {% endfor %}      
+    {% endfor %}   
+    -->   
     </div>
 </div>
 <script src="{{ site.baseurl }}/assets/js/event.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<script>
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true, 
-        prevNextButtons: false,
-        pageDots: false,
-        autoPlay: true, 
-        wrapAround: true
-    });
-</script>

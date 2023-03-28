@@ -139,7 +139,7 @@ p { line-height: 1.4em; }
 
 @media only screen and (max-width: 990px) { .pe-10 { padding-left: 0; } .bio-titulo { left: 1rem; } .img-credits { bottom: 6px; right: 10px; } }
 
-.hero-img { height: 77vh; width: 100%; object-fit: cover; filter: saturate(0); object-position: 0 20%; }
+.hero-img { height: 77vh; width: 100%; object-fit: cover; filter: saturate(0); object-position: 50% 20%; }
 
 .hero-container { position: relative; }
 
@@ -149,7 +149,7 @@ p { line-height: 1.4em; }
 
 .navbar-container { height: 11vh; }
 
-.rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 2.3vh; }
+.rotate-90 { writing-mode: tb-rl; transform: rotate(-180deg); font-size: 1em; }
 
 .agora-img { position: absolute; bottom: 8%; right: 30%; margin: auto; width: 40vw; }
 
