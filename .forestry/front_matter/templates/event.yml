@@ -122,6 +122,7 @@ fields:
   config: {}
   label: Parceiros
 pages:
+- _events/1-ano-antes.html
 - _events/este-peixe-e-um-robalo-copy.html
 - _events/os-mortos-tem-todos-as-mesmas-penas-copy.html
 - _events/proskenion.html
