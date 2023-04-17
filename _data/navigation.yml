@@ -1,10 +1,10 @@
-#- text: Sobre
-#  url: /sobre/
-# - text: Programação
-#  url: /programacao/
-#- text: Parceiros
-# url: /parceiros/
+- text: Sobre
+  url: /sobre/
+- text: Programação
+  url: /programacao/
+- text: Parceiros
+  url: /parceiros/
 - text: Contactos
   url: /contactos/
 - text: Arquivo
-  url: /arquivo/
+  url: /arquivo/  
