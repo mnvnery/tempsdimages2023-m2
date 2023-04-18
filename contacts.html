@@ -34,7 +34,7 @@ financiamento:
   {% include moment1.html%}
   <div class="d-flex flex-column flex-lg-row border border-bottom-0 border-red col-scroll">
       <div class="p-4 p-lg-5 pb-lg-5 pb-3 text-center sobre-section sobre-s-left w-lg-50">
-          {% for c in page.contactos reversed %}
+          {% for c in page.contactos %}
           <div class="contact-card">
               <h6>{{ c.cargo }}</h6>
               <h6><b>{{ c.nome }}</b></h6>
