@@ -356,11 +356,15 @@ collections:
           - name: producao
             widget: image
             label: Produção
-            config: {}
+            media_library:
+              config:
+                multiple: true
           - name: financiamento
             widget: image
             label: Financiamento
-            config: {}
+            media_library:
+              config:
+                multiple: true
       - name: archive
         label: Archive
         file: 'archive.html'
