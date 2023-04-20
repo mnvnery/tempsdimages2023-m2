@@ -86,7 +86,8 @@ collections:
             modes: [rich_text]
           - label: Ficha Técnica
             name: tech
-            widget: text
+            widget: markdown
+            modes: [rich_text]
           - label: Momento I
             name: momento_1
             widget: object
@@ -240,10 +241,12 @@ collections:
             default: about
           - label: O Festival
             name: festival
-            widget: text
+            widget: markdown
+            modes: [rich_text]
           - label: Ficha Técnica
             name: tech
-            widget: text
+            widget: markdown
+            modes: [rich_text]
           - label: Momento I
             name: momento_1
             widget: object
