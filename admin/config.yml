@@ -101,7 +101,8 @@ collections:
                 required: false
               - label: Info
                 name: info
-                widget: text
+                widget: markdown
+                modes: [rich_text]
       - label: 'Parceiros'
         name: 'parceiros'
         file: 'parceiros.html'
@@ -192,11 +193,11 @@ collections:
                 required: false
                 description: "(opcional)"
           - name: producao
-            widget: gallery
+            widget: image
             label: Produção
             config: {}
           - name: financiamento
-            widget: gallery
+            widget: image
             label: Financiamento
             config: {}
       - name: arquivo
@@ -212,11 +213,6 @@ collections:
             fields:
               - name: year
                 label: Ano
-                widget: text
-                config:
-                  required: false
-              - name: title
-                label: Título
                 widget: text
                 config:
                   required: false
@@ -262,7 +258,8 @@ collections:
                 required: false
               - label: Info
                 name: info
-                widget: text
+                widget: markdown
+                modes: [rich_text]
       - label: 'Partners'
         name: 'partners'
         file: 'partners.html'
@@ -357,11 +354,11 @@ collections:
                 required: false
                 description: "(opcional)"
           - name: producao
-            widget: gallery
+            widget: image
             label: Produção
             config: {}
           - name: financiamento
-            widget: gallery
+            widget: image
             label: Financiamento
             config: {}
       - name: archive
@@ -377,11 +374,6 @@ collections:
             fields:
               - name: year
                 label: Ano
-                widget: text
-                config:
-                  required: false
-              - name: title
-                label: Título
                 widget: text
                 config:
                   required: false
