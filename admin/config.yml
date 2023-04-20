@@ -83,6 +83,7 @@ collections:
           - label: O Festival
             name: festival
             widget: markdown
+            modes: rich_text
           - label: Ficha Técnica
             name: tech
             widget: text
@@ -205,6 +206,42 @@ collections:
             type: gallery
             label: Financiamento
             config: {}
+      - name: arquivo
+        label: Arquivo
+        file: 'aquivo.html'
+        editor:
+          preview: false
+        fields:
+          - name: layout
+            label: layout
+            type: text
+            hidden: true
+          - name: editions
+            label: Edições
+            type: fieldGroupList
+            config:
+              min: 
+              max: 
+              labelField: year
+            fields:
+              - name: year
+                label: Ano
+                type: text
+                config:
+                  required: false
+              - name: title
+                label: Título
+                type: textarea
+                config:
+                  required: false
+                  wysiwyg: true
+                  schema:
+                    format: html-blocks
+              - name: link
+                label: Link
+                type: text
+                config:
+                  required: false
   - name: 'pages'
     label: 'Pages ENG'
     editor:
@@ -347,6 +384,43 @@ collections:
             type: gallery
             label: Financiamento
             config: {}
+      - name: archive
+        label: Archive
+        file: 'archive.html'
+        editor:
+          preview: false
+        fields:
+          - name: layout
+            label: layout
+            type: text
+            hidden: true
+          - name: editions
+            label: Edições
+            type: fieldGroupList
+            config:
+              min: 
+              max: 
+              labelField: year
+            fields:
+              - name: year
+                label: Ano
+                type: text
+                config:
+                  required: false
+              - name: title
+                label: Título
+                type: textarea
+                config:
+                  required: false
+                  wysiwyg: true
+                  schema:
+                    format: html-blocks
+              - name: link
+                label: Link
+                type: text
+                config:
+                  required: false
+
 
 
 
