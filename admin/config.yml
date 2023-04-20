@@ -191,9 +191,6 @@ collections:
                 widget: text
                 required: false
                 description: "(opcional)"
-            min: 
-            max: 
-            labelField: 
           - name: producao
             widget: gallery
             label: Produção
@@ -359,9 +356,6 @@ collections:
                 widget: text
                 required: false
                 description: "(opcional)"
-            min: 
-            max: 
-            labelField: 
           - name: producao
             widget: gallery
             label: Produção
