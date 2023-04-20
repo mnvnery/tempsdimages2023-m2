@@ -83,6 +83,7 @@ collections:
           - label: O Festival
             name: festival
             widget: markdown
+            modes: rich_text
           - label: Ficha Técnica
             name: tech
             widget: text
