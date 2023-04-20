@@ -196,11 +196,15 @@ collections:
           - name: producao
             widget: image
             label: Produção
-            config: {}
+            media_library:
+              config:
+                multiple: true
           - name: financiamento
             widget: image
             label: Financiamento
-            config: {}
+            media_library:
+              config:
+                multiple: true
       - name: arquivo
         label: Arquivo
         file: 'arquivo.html'
