@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/">
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
-
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     </head>
     <body>
@@ -290,7 +290,7 @@
         <div class="event-container d-lg-flex border border-red pb-3 mt-2" data-days='03-6,04-6,'>
             <div class="p-relative w-lg-50 event-img mx-4 red-shadow">
                 <img src="/assets/img/os-passos-em-volta-andresa-soares.jpg" alt="Event Image" class="saturate w-100 event-img-target">
-                <div class="img-credits small-text">Andressa Soares</div>
+                <div class="img-credits small-text">Andresa Soares</div>
                 <div class="ticket-btn red-shadow px-2 py-1"><a href="" target="_blank"> Bilhetes em breve </a></div>
             </div>
             <div class="open-event w-lg-50">
@@ -506,7 +506,7 @@
             <div class="open-event w-lg-50">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center px-4">
                     <h6><b>1 Ano Antes</b></h6>
-                    <h6>Luísa Fidaldo</h6>
+                    <h6>Luísa Fidalgo</h6>
                     <br>
                     <ul>
                         <li>10-11 junho 2023, 19h</li>
@@ -521,7 +521,7 @@
                     <div class="event-details d-lg-flex flex-column justify-content-center align-items-center text-center w-lg-50 ps-lg-5 pe-10 px-4">
                         <div>
                             <h6><b>1 Ano Antes</b></h6>
-                            <h6>Luísa Fidaldo</h6>
+                            <h6>Luísa Fidalgo</h6>
                             <br>
                             <ul>
                                 <li>10-11 junho 2023, 19h</li>
@@ -552,7 +552,17 @@
 </div>
 <script src="/assets/js/event.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+            }
+        });
+        }
+</script>
             <div class="border-top border-start border-pink d-flex momento-2-toggle">
     <div class="text-center pink depois-container">
         <div class="p-relative">
