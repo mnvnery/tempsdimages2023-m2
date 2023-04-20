@@ -170,55 +170,47 @@ collections:
         editor:
           preview: false
         fields:
-          - type: text
-            name: layout
-            label: layout
-            hidden: true
           - name: contactos
             label: Contactos
-            type: list
+            widget: list
             fields:
               - name: cargo
                 label: Cargo
-                type: text
+                widget: text
                 required: false
               - name: nome
                 label: Nome
-                type: text
+                widget: text
                 required: false
               - name: email
                 label: Email
-                type: text
+                widget: text
                 required: false
               - name: telefone
                 label: Telefone
-                type: text
+                widget: text
                 required: false
                 description: "(opcional)"
             min: 
             max: 
             labelField: 
           - name: producao
-            type: gallery
+            widget: gallery
             label: Produção
             config: {}
           - name: financiamento
-            type: gallery
+            widget: gallery
             label: Financiamento
             config: {}
       - name: arquivo
         label: Arquivo
-        file: 'aquivo.html'
+        file: 'arquivo.html'
         editor:
           preview: false
         fields:
-          - name: layout
-            label: layout
-            type: text
-            hidden: true
           - name: editions
             label: Edições
-            type: fieldGroupList
+            widget: fieldGroupList
             config:
               min: 
               max: 
@@ -226,12 +218,12 @@ collections:
             fields:
               - name: year
                 label: Ano
-                type: text
+                widget: text
                 config:
                   required: false
               - name: title
                 label: Título
-                type: textarea
+                widget: textarea
                 config:
                   required: false
                   wysiwyg: true
@@ -239,7 +231,7 @@ collections:
                     format: html-blocks
               - name: link
                 label: Link
-                type: text
+                widget: text
                 config:
                   required: false
   - name: 'pages'
@@ -348,40 +340,40 @@ collections:
         editor:
           preview: false
         fields:
-          - type: text
+          - widget: text
             name: layout
             label: layout
             hidden: true
           - name: contactos
             label: Contactos
-            type: list
+            widget: list
             fields:
               - name: cargo
                 label: Cargo
-                type: text
+                widget: text
                 required: false
               - name: nome
                 label: Nome
-                type: text
+                widget: text
                 required: false
               - name: email
                 label: Email
-                type: text
+                widget: text
                 required: false
               - name: telefone
                 label: Telefone
-                type: text
+                widget: text
                 required: false
                 description: "(opcional)"
             min: 
             max: 
             labelField: 
           - name: producao
-            type: gallery
+            widget: gallery
             label: Produção
             config: {}
           - name: financiamento
-            type: gallery
+            widget: gallery
             label: Financiamento
             config: {}
       - name: archive
@@ -392,11 +384,11 @@ collections:
         fields:
           - name: layout
             label: layout
-            type: text
+            widget: text
             hidden: true
           - name: editions
             label: Edições
-            type: fieldGroupList
+            widget: fieldGroupList
             config:
               min: 
               max: 
@@ -404,12 +396,12 @@ collections:
             fields:
               - name: year
                 label: Ano
-                type: text
+                widget: text
                 config:
                   required: false
               - name: title
                 label: Título
-                type: textarea
+                widget: textarea
                 config:
                   required: false
                   wysiwyg: true
@@ -417,7 +409,7 @@ collections:
                     format: html-blocks
               - name: link
                 label: Link
-                type: text
+                widget: text
                 config:
                   required: false
 
