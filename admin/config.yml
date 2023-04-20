@@ -373,7 +373,7 @@ collections:
           - name: editions
             label: Edições
             widget: list
-            summary: '{{fields.year}}''
+            summary: '{{fields.year}}'
             fields:
               - name: year
                 label: Ano
