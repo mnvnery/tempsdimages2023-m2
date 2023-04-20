@@ -82,7 +82,7 @@ collections:
             default: about
           - label: O Festival
             name: festival
-            widget: text
+            widget: markdown
           - label: Ficha Técnica
             name: tech
             widget: text
