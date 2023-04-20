@@ -202,7 +202,7 @@ collections:
       - name: arquivo
         label: Arquivo
         file: 'arquivo.html'
-        summary: '{{fields.year}}''
+        summary: '{{fields.year}}'
         editor:
           preview: false
         fields:
