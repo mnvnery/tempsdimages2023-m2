@@ -63,8 +63,8 @@ collections:
           {label: "Biografia", name: "bio", widget: "text", required: false}
         ], required: false}
       - {label: "Parceiros", name: "parceiros", widget: "image", media_library: {allow_multiple: true}}
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'paginas'
+    label: 'Páginas PT'
     editor:
       preview: false
     files:
