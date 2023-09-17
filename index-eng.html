@@ -20,7 +20,7 @@ images:
         </div>
         {% assign sortedEvents = site.events_eng | sort: 'start_date' %}
         {% for event in sortedEvents %}
-        <div class="event-container d-lg-flex border border-red pb-3 mt-2" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
+        <div class="event-container d-lg-flex border border-red pb-3 pt-2" data-days='{% for dia in event.dias %}{{ dia }},{% endfor %}'>
             <div class="p-relative w-lg-50 event-img mx-4 red-shadow">
                 <img src="{{site.baseurl}}{{event.image}}" alt="Event Image" class="saturate w-100 event-img-target">
                 <div class="img-credits small-text">{{ event.credit_image }}</div>

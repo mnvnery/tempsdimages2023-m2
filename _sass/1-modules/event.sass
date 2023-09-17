@@ -1,8 +1,6 @@
 .momento-1-header
     position: sticky
     top: 11vh
-    background-color: black
-    color: #F3F3F3
     z-index: 5
     
 .event-img
@@ -14,6 +12,10 @@
     object-fit: cover
     height: 25vh
     
+.event-container
+    background-color: $red
+    color: black
+
 .event-container:nth-child(odd)
     flex-direction: row
 
@@ -34,7 +36,8 @@
     object-fit: cover
 
 .bio-titulo
-    background-color: #f3f3f3
+    background-color: black
+    color: $red
     position: absolute
     top: -5px
     left: 5rem
@@ -51,11 +54,11 @@
 
 .ticket-btn
     background-color: #F3F3F3
-    color: $red
+    color: black
     position: absolute
     top: 1.5em
     left: -1em
-    border: 1px solid $red
+    border: 1px solid black
     font-size: 0.8em
 
 .day-active
