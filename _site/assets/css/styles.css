@@ -123,7 +123,7 @@ p { line-height: 1.4em; }
 
 .event-img-target { height: 25vh; object-fit: cover; }
 
-.bio-titulo { background-color: black; color: #f3f3f3; position: absolute; top: -5px; left: 5rem; padding: 0 1em; font-size: 0.9em; }
+.bio-titulo { background-color: #f3f3f3; color: black; position: absolute; top: -5px; left: 5rem; padding: 0 1em; font-size: 0.9em; }
 
 .event-btn { transition: 0.2s; }
 
