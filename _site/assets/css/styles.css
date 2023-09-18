@@ -135,9 +135,9 @@ p { line-height: 1.4em; }
 
 .day { width: 10%; }
 
-.momento-1-header a { border: 1px solid black; border-radius: 50%; padding: 0 8px; }
+.momento-1-header a { border-radius: 50%; padding: 0 8px; }
 
-.momento-1-header a:hover { border: 1px solid white; border-radius: 50%; padding: 0 8px; color: white; }
+.momento-1-header a:hover { border-radius: 50%; padding: 0 8px; color: white; }
 
 .ver-prog:hover { filter: drop-shadow(-1px 2px 2px rgba(255, 69, 197, 0.4)); transition: 0.2s; }
 
