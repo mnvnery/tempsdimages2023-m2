@@ -62,7 +62,7 @@ collections:
           {label: "Nome Artista", name: "artist_bio", widget: "string", required: false},
           {label: "Biografia", name: "bio", widget: markdown, modes: [rich_text]}
         ], required: false}
-      - {label: "Parceiros", name: "parceiros", widget: "image", media_library: {config: {multiple: true}}, required: false}
+      - {label: "Parceiros", required: false, name: "parceiros", widget: "list", field: {label: Image, name: image, widget: image}}
   - name: 'paginas'
     label: 'Páginas PT'
     editor:
